@@ -258,7 +258,7 @@
 <!--			</a>-->
 			<a class="mui-tab-item" href="<?php echo U('Index/running');?>">
 				<span class="mui-icon mui-icon-email"></span>
-				<span class="mui-tab-label">流水</span>
+				<span class="mui-tab-label">收单</span>
 			</a>
 <!--			<a class="mui-tab-item mui-active"  href="<?php echo U('Index/shoudan');?>">-->
 <!--				<span class="mui-icon mui-icon-gear"></span>-->

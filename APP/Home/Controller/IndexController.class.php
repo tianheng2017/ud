@@ -8,6 +8,48 @@ use Think\Controller;
 class IndexController extends CommonController
 {
 
+    public function running(){
+        $lists = M('running')->where(['uid'=>session('userid')])->order('time asc')->select();
+        $this->assign('lists', $lists);
+        $this->display();
+    }
+
+    private function getMoney($xmoney, $all){
+        $smoney = mt_rand(1, $xmoney - $all);
+        if ($smoney > $xmoney*0.06){
+            $smoney = $this->getMoney($xmoney, $all);
+        }
+        return $smoney;
+    }
+
+    //每小时定时执行该函数, 每天随机生成总和为5倍的虚假流水,单次不低于10快,不高于5倍金额的6%
+    public function auto(){
+        $today_start = strtotime(date('Y-m-d 00:00:00', time()));
+        $today_end =  strtotime(date('Y-m-d 23:59:59', time()));
+        $moneys = M('user')->where(['real'=>1])->getField('userid,money');
+        $diff = time() - $today_start;
+        if ($diff < 2000){
+            $time = rand(1, $diff-1);
+        }else{
+            $time = time() - mt_rand(10,2000);
+        }
+        foreach ($moneys as $k => $money){
+            $xmoney = $money*5;
+            $map['time'] = array(array('gt', $today_start), array('lt', $today_end));
+            $map['uid'] = $k;
+            $all = M('running')->where($map)->sum('money');
+            if ($all < $xmoney){
+                $smoney = $this->getMoney($xmoney, $all);
+                if ($smoney > 10){
+                    $data['time'] = $time;
+                    $data['money'] = $smoney;
+                    $data['uid'] = $k;
+                    M('running')->data($data)->add();
+                }
+            }
+        }
+    }
+
     public function index(){
 //
 //		$ulist = M('user')->order('zsy desc')->limit(10)->select();
@@ -23,7 +65,7 @@ class IndexController extends CommonController
 //		$this->assign('num',$num);
 //		$this->assign('ulist',$ulist);
 //        $this->display();
-        $this->redirect('Index/qdgame');
+        $this->redirect('User/index');
     }
 	
 	public function substr_cut($user_name){
@@ -975,7 +1017,6 @@ class IndexController extends CommonController
 			$this->ajaxReturn($data);exit;
 		}
 	}
-
 
 
 

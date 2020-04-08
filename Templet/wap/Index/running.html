@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+
+    <link href="__WCSS__/mui.min.css" rel="stylesheet"/>
+
+	<style>
+		.body{
+			line-height: px;
+		}
+		.mui-table-view-cell:after{
+			left:0;
+			background-color: #c8c7cc;
+			margin: 0 10px;
+		}
+		.mui-table-view:before{
+			background-color: unset;
+		}
+		.mui-table-view:after{
+			background-color: unset;
+		}
+		.mui-input-group:before{
+			height:0px
+		}
+		.mui-input-group:after{
+			height: 0px;
+		}
+		.header{
+			background:#fff;
+			top:0;
+			box-shadow:0 0px 0px #ccc;
+			-webkit-box-shadow:0 0px 0px #ccc;
+		}
+		.czjilu{
+			font-family:'微软雅黑';
+			color: #000;
+		}
+		.ul{
+			background:#fff;
+			/*border-radius:10px;*/
+			box-shadow:2px 0 0 0 #ccc;
+			margin: 50px 0 0 0;
+		}
+		.zfbcz{
+			color:#000;
+			font-family:'微软雅黑';
+		}
+		.money{
+			margin-left:5px;
+			font-size:1em;
+			color:#2AC845;
+		}
+		.time{
+			color:#000;
+			padding:0 6px 6px 6px;
+			position: absolute;
+			right: 10px;
+		}
+		.state{
+			color:#000;
+			padding:2px 0 0 0;
+			position: absolute;
+			left: 45%;
+		}
+		a{
+			color: #000;
+		}
+		.mui-table-view-cell{
+			/*text-align: center;*/
+			padding: 11px 10px;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body style="background:#f8f8f8;">
+	<header class="mui-bar mui-bar-nav header">
+			<div style="width:10%;float:left;">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+			</div>
+			<div style="width:80%;float:left;"><h1 class="mui-title czjilu">收单记录</h1></div>
+	</header>
+	<ul class="mui-table-view ul">
+		<empty name='lists'>
+			 <li class="mui-table-view-cell" style="text-align: center;"><span style="color:#000;font-size:14px;">您暂时没有收单记录</span></li>
+		<else />
+		<foreach name = 'lists' item ='info'>
+		<li class="mui-table-view-cell">
+			<span class="zfbcz">收入</span>
+			<span class="state" style="color: #00b431;font-size: 15px;">+<?=$info['money']?></span>
+			<span class="time"><?php echo date("Y-m-d H:i",$info['time']);?></span>
+		 </li>
+		</foreach>
+		</empty>
+	</ul>
+</body>
+<script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
+<script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+</html>
