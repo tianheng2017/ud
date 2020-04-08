@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe29c47a-cc2a-4a1e-93d9-0128ecd584d3" name="Default Changelist" comment="" />
+    <list default="true" id="fe29c47a-cc2a-4a1e-93d9-0128ecd584d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Home/Controller/Index222222222222222Controller.class - 副本.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Home/Controller/LoginController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Home/Controller/LoginController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Logs/Admin/20_04_08.log" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Logs/Admin/20_04_08.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Logs/Home/20_04_08.log" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Logs/Home/20_04_08.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +20,11 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZzIFH2uLRWAA9Fye2RU05QvkAS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -20,6 +32,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -42,6 +55,7 @@
       <workItem from="1585835392007" duration="2441000" />
       <workItem from="1586051818464" duration="24000" />
       <workItem from="1586145705967" duration="25016000" />
+      <workItem from="1586348222035" duration="4822000" />
     </task>
     <servers />
   </component>

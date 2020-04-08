@@ -243,8 +243,40 @@ class LoginController extends Controller
         }
     }
 
-    public function auto_record(){
-        $uids = M('user')->where('real=1')->getField('userid',true);
-        dump($uids);
+    private function getMoney($xmoney, $all){
+        $smoney = mt_rand(1, $xmoney - $all);
+        if ($smoney > $xmoney*0.1){
+            $smoney = $this->getMoney($xmoney, $all);
+        }
+        return $smoney;
+    }
+
+    //每小时定时执行该函数, 每天随机生成总和为3倍的虚假流水
+    public function auto(){
+        $moneys = M('user')->where(['real'=>1])->getField('userid,money');
+        $today_start = strtotime(date('Y-m-d 00:00:00', time()));
+        $today_end =  strtotime(date('Y-m-d 23:59:59', time()));
+        $diff = time() - $today_start;
+        if ($diff < 2000){
+            $time = rand(1, $diff-1);
+        }else{
+            $time = time() - mt_rand(10,2000);
+        }
+        foreach ($moneys as $k => $money){
+            $xmoney = $money*3;
+            $map['time'] = array(array('gt', $today_start), array('lt', $today_end));
+            $map['uid'] = $k;
+            $all = M('running')->where($map)->sum('money');
+            if ($all < $xmoney){
+                $smoney = $this->getMoney($xmoney, $all);
+                if ($smoney > 10){
+                    $data['time'] = $time;
+                    $data['money'] = $smoney;
+                    $data['uid'] = $k;
+                    M('running')->data($data)->add();
+                }
+            }
+        }
+
     }
 }
