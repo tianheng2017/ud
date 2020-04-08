@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="__WCSS__/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@1.6/lib/index.css">
+	<script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+	<script type="text/javascript" src="__COM__/js/index.js" ></script>
+	<script type="text/javascript" src="__COM__/js/public.js" ></script>
+	<script type="text/javascript" src="__COM__/js/common.js" ></script>
+	<style>
+		/*跨webview需要手动指定位置*/
+		
+		.mui-plus header.mui-bar {
+			display: none!important;
+		}
+		.mui-plus .mui-bar-nav~.mui-content {
+			padding:0!important;
+		}
+		
+		.mui-plus .plus{
+			display: inline;
+		}
+		
+		.plus{
+			display: none;
+		}
+		
+		#topPopover {
+			position:fixed;
+			top:16px;
+			right:6px;
+		}
+		#topPopover .mui-popover-arrow {
+			left:auto;
+			right:6px;
+		}
+		
+		span.mui-icon {
+			font-size:14px;
+			color:#007aff;
+			margin-left:-15px;
+			padding-right:10px;
+		}
+		.mui-popover {
+			height:300px;
+		}
+		.mui-content {
+			padding:10px;
+		}
+		.header{
+			background:#fff;
+			top:0;
+			box-shadow:0 0px 0px #ccc;
+			-webkit-box-shadow:0 0px 0px #ccc;
+		}
+		.h1{
+			font-family:'微软雅黑';
+			color: #000;
+		}
+		.ul{
+			background:#fff;
+			line-height:2em;
+			border-radius:10px;
+			box-shadow:2px 0px 10px 0px #ccc;
+			margin: 10px 10px;
+		}
+		a{
+			color: #000;
+		}
+		.p{
+			margin-left:10%;
+			font-family:'微软雅黑';
+			color:#000;
+		}
+		.p2{
+			position:absolute;
+			left:35%;
+			bottom: 5px;
+			font-size:1em;
+			color: #000;
+		}
+		.button{
+			display:block;
+			position:absolute;
+			background: #00CFD6;
+			color:#fff;
+			top:12px;
+			font-size:0.7em;
+			right:20px;
+			width:80px;
+			border-radius:8px;
+			border:0px solid;
+			width: 20%;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.mui-table-view-cell:after{
+			background-color: unset;
+			margin:0 10px;
+		}
+		.mui-table-view:before{
+			background-color: unset;
+		}
+		.mui-table-view:after{
+			background-color: unset;
+		}
+		.mui-table-view-cell{
+			padding: 5px 15px;
+		}
+		.mui-switch{
+			line-height: 20px;
+			right: 20px!important;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body style="background: #f8f8f8;">
+	<header class="mui-bar mui-bar-nav header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+			<h1 class="mui-title h1">云闪付</h1>
+		</header>
+		<br><br>
+		<empty name="wxlist">
+		<else />
+			<foreach name="wxlist" item="info">
+				<ul class="mui-table-view ul">
+					<li class="mui-table-view-cell mui-collapse-content" style="display:none;"><p class="p">收款金额</p><p class="p2"><?php echo $info['ewm_price'];?></p> </li>
+					<li class="mui-table-view-cell mui-collapse-content"><p class="p">收款账号</p><p class="p2"><?php echo $info['ewm_acc'];?></p> </li>
+					<a type="button" class="button" href="<?php echo U('User/erweimainfo',array('id'=>$info['id']));?>">详情</a>
+					<li class="mui-table-view-cell mui-collapse-content">
+						<p class="p">使用状态</p>
+						<div class="mui-switch <?php echo $info['state']?'mui-active':'';?>" skid="<?php echo $info['id'];?>" onclick="switchs(this);">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</li>
+				</ul>
+			</foreach>
+		</empty>
+	<script>
+        function switchs(obj){
+            var isActive = $(obj).hasClass('mui-active')
+                ,id = $(obj).attr('skid');
+            $.post("{:U('User/erweimaState')}",{'state':isActive?0:1,'id':id},function (res) {
+                if(res.status != 3){
+                    if (isActive){
+                        $(obj).removeClass('mui-active');
+                    }else{
+                        $(obj).addClass('mui-active');
+                    }
+                    layer.msg(res.msg);
+                }else{
+                    layer.msg(res.msg);
+                }
+            });
+        }
+	</script>
+</body>
+</html>

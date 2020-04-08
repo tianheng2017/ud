@@ -1,0 +1,229 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="/Public/home/wap/css/mui.min.css" rel="stylesheet">
+	<script type="text/javascript" src="/Public/home/common/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="/Public/home/common/layer/layer.js"></script>
+	<script type="text/javascript" src="/Public/home/common/js/index.js" ></script>
+	<script type="text/javascript" src="/Public/home/common/js/public.js" ></script>
+	<script type="text/javascript" src="/Public/home/common/js/common.js" ></script>
+	<script type="text/javascript" src="/Public/home/common/js/Uploader.swf" ></script>
+	<script type="text/javascript" src="/Public/home/common/js/webuploader.js" ></script>
+	<style>
+		.body{
+			line-height: px;
+		}
+		.mui-table-view-cell:after{
+			background-color: #c8c7cc;
+			/*margin: 0 10px;*/
+		}
+		.mui-table-view:before{
+			background-color: unset;
+		}
+		.mui-table-view:after{
+			background-color: unset;
+		}
+		.mui-input-group:before{
+			height:0px
+		}
+		.mui-input-group:after{
+			height: 0px;
+		}
+		.head{
+			background:#fff;
+			top:0;
+			box-shadow:0 0px 0px #ccc;
+			-webkit-box-shadow:0 0px 0px #ccc;
+		}
+		.headh1{
+			font-family:'微软雅黑';
+			color: #000;
+		}
+		.erweima{
+			background:#fff;
+			height: 180px;
+			width: 175px;
+			top: 60px;
+			margin: auto;
+			left:0px;
+			right:0px;
+			border-radius:10px;
+			box-shadow:2px 0px 20px 0px #ccc;
+		}
+		.img{
+			width:120px;
+			margin-left:26px;
+			margin-top: 20px;
+		}
+		.spanerweima{
+			color:#fff;
+			font-family:'微软雅黑';
+			font-size: 0.9em;
+			margin-left: 42px;
+		}
+		.spanleixing{
+			position:absolute;
+			color:#CCCCCC;
+			margin-top:25%;
+			margin-left:5%;
+			font-size:0.9em;
+			font-family: '微软雅黑'; 
+		}
+		.ulleixing{
+			background:#fff;
+			color:#000;
+			font-size:0.9em;
+			box-shadow:2px 0px 0 0px #ccc;
+			margin-top:80px;
+			padding: 0 50px;
+			font-family:'微软雅黑';
+			/*border-radius:15px;*/
+			width:100%;
+		}
+		.mui-input-group .mui-input-row:after{
+			background-color: unset;
+		}
+		a{
+			color:#000;
+		}
+		.form{
+			top:20px;
+			height:0px;
+			width:80%;
+			left:0px;
+			right:0px;
+			margin:auto;
+		}
+		.divinput{
+			border-radius:30px;
+			background-color:#fff;
+			margin-bottom: 30px;
+			border: 1px solid #ccc;
+		}
+		.formimg{
+			position:absolute;
+			width:35px;
+			margin-left:15px;
+			margin-top: 4px;
+		}
+		.formmoney{
+			color:#0062CC;
+			margin-left: 50px;
+			font-size:0.9em;
+			font-family:'微软雅黑';
+		}
+		.formzh{
+			color:#0062CC;
+			margin-left: 50px;
+			font-size:0.9em;
+			font-family: '微软雅黑';
+		}
+		.buttonadd{
+			line-height:2em;
+			font-size:0.9em;
+			width:80%;
+			font-family:'微软雅黑';
+			border-radius:30px;
+			border:0px solid;
+			background:#26C4FD;
+		}
+	.files{margin-right: 120px;width: 120px;text-align: center;}
+	.f1{float: left;}
+	.file-btn {display: block;position: relative;margin-right: 120px;width: 120px;height: 120px;overflow: hidden;}
+	img {border: 0;vertical-align: middle;display: inline-block;}
+	.file-btn3 input, .file-btn input { position: absolute;left: 0;top: 0; width: 100%;height: 100%;border: none; margin: 0;opacity: 0;cursor: pointer;}
+	.buttonGeoup .not_next {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+		background: #073b6b;
+		height: 40px;
+		line-height: 40px;
+		color: #fff;
+		font-size: 12px;
+		margin-bottom: 10px;
+		border-radius: 10px;
+	}
+	</style>
+</head>
+<body style="background:#f8f8f8;">
+	<header class="mui-bar mui-bar-nav head">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"  href="/User/zichan"></a>
+			<h1 class="mui-title headh1">上传充币凭证</h1>
+	</header>	
+	<div class="mui-card-content erweima">
+		<input type="hidden" id="id" value="<?php echo ($id); ?>">
+		<div class="opiniontop_d" style=" background: none;width: 80%;margin: 5px auto 0 auto;height:170px; border-radius:5px;">
+			<div class="clear oneimg" style="width:100%;height:100%;color:#000;padding:10px 5px;">
+			 <div id="filelist1" class="files fl" style="margin: 15% auto;">
+				 <span id="filePicker1" class="file-btn webuploader-container">
+					<div class="webuploader-pick">
+						<img src="/Public/home/wap/images/tianjia.png"  id="img1" onload="setImgWH(this)"  />
+					</div>
+					<div id="rt_rt_1cvagj2mr16sv1dg91skisdj1qfr1" style="position: absolute; top: 0px; left: 0px; width: 120px; height: 100%; overflow: hidden; bottom: auto; right: auto;display:none;">
+						<input type="file" name="file" class="webuploader-element-invisible" accept="image/jpg,image/gif,image/png,image/jpeg">
+						<label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+					</div>
+				</span>
+				 <input type="hidden" name="icon" id="icon" value="">
+			 </div>
+			</div>
+		</div>
+	</div>
+	<div style="background: #fff;display: block;height: 220px;margin-top: 80px;">
+		<form class="mui-input-group form">
+			<div class="mui-input-row divinput">
+				<img src="/Public/home/wap/images/nubmer.png" class="formimg" />
+				<input type="number" class="formmoney" name="price" id="price" value="" placeholder="充币数量" onkeyup="value=value.replace(/[^\d\.]/g,'')" >
+			</div>
+			<div class="mui-button-row" style="margin-bottom: 60px;">
+				<button type="button" class="mui-btn mui-btn-danger buttonadd"  id="cuanjdd">提交审核</button>
+			</div>
+		</form>
+	</div>
+</body>
+    <script type="text/javascript">
+		var UPLOAD_URL = "/Home/User/uploadfile.html";
+		var SWF_URL = '/Public/home/common/js/Uploader.swf';
+		 $(function () {
+			 upload1();
+		 });
+    </script>
+    <style>
+        .z_alert{ color: #333;}
+        .z_alert span{ color: #0da8f5; }
+    </style>
+    <script>
+        $('#cuanjdd').click(function () {
+            var icon = $('#icon').val();
+            var price = $('#price').val();
+            var id = $('#id').val();
+			if(icon == ''){
+                msg_alert('没有上传充币凭证');
+				return false;
+            }
+            if(price == ''){
+                msg_alert('请输入充币数量');
+				return false;
+            }
+			$("#cuanjdd").attr('disabled',true);
+            $.ajax({
+                url:'',
+                type:'post',
+                data:{'rid':id, 'icon':icon,'price':price},
+                datatype:'json',
+                success:function (mes) {
+                    if(mes.code == 1){
+                        msg_alert(mes.msg, '/Recharge/chongzhijilu');
+                    }else{
+                        msg_alert(mes.msg);
+                    }
+                }
+            })
+        });
+    </script>
+</html>

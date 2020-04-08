@@ -1,0 +1,194 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="/Public/home/wap/js/mui.min.js"></script>
+    <link href="/Public/home/wap/css/mui.min.css" rel="stylesheet">
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+    <style>
+        .body{
+            line-height: px;
+        }
+        .mui-table-view-cell:after{
+            left: 0px;
+            background-color: #c8c7cc;
+            margin: 0 40px;
+        }
+        .mui-table-view:before{
+            background-color:unset;
+        }
+        .mui-table-view:after{
+            background-color:unset;
+        }
+        .mui-input-group:before{
+            height:0px
+        }
+        .mui-input-group:after{
+            height:0px;
+        }
+        .header{
+            background:#fff;
+            top:0;
+            box-shadow:0 0px 0px #ccc;
+            -webkit-box-shadow:0 0px 0px #ccc;
+        }
+        .h1{
+            font-family:'微软雅黑';
+            color:#000;
+        }
+        .ul{
+            margin-top: 55px;
+            background:#fff;
+            line-height:2em;
+        }
+        .p{
+            margin-left:10%;
+            font-family:'微软雅黑';
+            color:#000;
+        }
+        .p1{
+            position:absolute;
+            left:35%;
+            bottom:12px;
+            font-family:'微软雅黑';
+            font-size:1em;
+            color:#000;
+        }
+        .form{
+            top:10px;
+            height:0px;
+            width:80%;
+            left:0px;
+            right:0px;
+            margin:auto;
+        }
+        .divc{
+            border-radius:30px;
+            background-color:#fff;
+            margin-bottom:30px;
+            border:1px solid #ccc;
+        }
+        .mui-input-group .mui-input-row:after{
+            background-color: unset;
+        }
+        .img{
+            position:absolute;
+            width:35px;
+            margin-left:15px;
+            margin-top:4px;
+        }
+        .int{
+            color:#0062CC;
+            margin-left:50px;
+            font-size:0.9em;
+            font-family:'微软雅黑';
+        }
+        .button{
+            line-height:2em;
+            font-size:0.9em;
+            width:80%;
+            font-family:'微软雅黑';
+            border-radius:30px;
+            border:0px solid;
+            background:#26C4FD;
+        }
+        a{
+            color:#000;
+        }
+        input::-webkit-input-placeholder {
+            color: #ccc;
+        }
+        input::-moz-input-placeholder {
+            color: #ccc;
+        }
+        input::-ms-input-placeholder {
+            color: #ccc;
+        }
+        .form{
+            width: 100%;
+            top: 0;
+        }
+    </style>
+</head>
+<body style="background:#f8f8f8;">
+<header class="mui-bar mui-bar-nav header">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="/User/zichan"></a>
+    <h1 class="mui-title h1">USDT提币</h1>
+</header>
+<form class="mui-input-group form" name="AddUser" action="/Withdraw/drawup" id="registerForm">
+    <div style="height: 115px;width: 100%;background: #fff;margin-top: 55px;">
+        <div style="color: #000;padding: 20px 5%;font-weight: bold;">
+            <span>选择提币网络</span>
+            <span class="mui-icon mui-icon mui-icon-help" style="font-size: 20px;margin-left: 5px;cursor: pointer;"></span>
+        </div>
+        <div style="height: 40px;width: 100%;padding: 0 5%;">
+            <button id="erc20" type="button" class="mui-btn mui-btn-primary mui-btn-outlined" style="width: 75px;">ERC20</button>
+            <button id="omini" type="button" class="mui-btn mui-btn-primary" style="margin-left: 10px;width: 75px;">OMNI</button>
+        </div>
+    </div>
+    <div style="height: 135px;width: 100%;background: #fff;margin-top: 10px;">
+        <div style="color: #000;padding: 20px 5% 10px;font-weight: bold;position: relative;">
+            <span>提币地址(OMINI网络)</span>
+            <input type="text" placeholder="请输入提币地址" id="address" style="outline: unset;overflow: hidden;margin-top: 20px;width: 100%;color: #000;padding: 0 5%;border: unset;border-bottom: 1px solid #ccc;">
+<!--            <div style="position: absolute;top: 70px;right:10px;width:60px;text-align: center;padding: 1px 0 0 0;background: #fff;cursor: pointer;">-->
+<!--                <img src="../Public/home/wap/images/shaomiao.png" alt="" width="35">-->
+<!--            </div>-->
+        </div>
+    </div>
+    <div style="height: 165px;width: 100%;background: #fff;margin-top: 10px;">
+        <div style="color: #000;padding: 20px 5% 20px;font-weight: bold;position: relative;">
+            <span>提币数量</span>
+            <input type="text" placeholder="请输入提币数量" id="num" style="outline: unset;overflow: hidden;margin-top: 20px;width: 100%;color: #000;padding: 0 5%;border: unset;border-bottom: 1px solid #ccc;">
+            <div id="all" style="position: absolute;top: 70px;right:10px;width:60px;text-align: center;background: #fff;cursor: pointer;border-left: 1px solid #ccc;">
+                全部
+            </div>
+        </div>
+        <div style="color: #000;padding: 0 5%;font-weight: bold;font-size: 15px;">
+            <p>可提资产： <span id="kyye"><?php echo ($user["money"]); ?></span> USDT</p>
+        </div>
+    </div>
+    <div class="mui-button-row" style="margin-top: 10px;">
+        <button type="button" class="mui-btn mui-btn-danger button"  id="submit" onclick="now()">确定</button>
+    </div>
+</form>
+</body>
+<script type="text/javascript" src="/Public/home/common/js/jquery-1.9.1.min.js" ></script>
+<script type="text/javascript" src="/Public/home/common/layer/layer.js" ></script>
+<script type="text/javascript">
+    $(function () {
+        var kyye = parseFloat($('#kyye').text());
+        $('#all').on('click',function () {
+            $('#num').val(kyye);
+        });
+    });
+    $('#erc20').on('click',function () {
+        window.location.href = "<?php echo U('Withdraw/tixian');?>";
+    });
+    $('#omini').on('click',function () {
+        window.location.href = "<?php echo U('Withdraw/tixian2');?>";
+    });
+    function now(){
+        var account = $('#address').val();
+        var num = parseFloat($('#num').val());
+        $("#submit").attr('disabled',true);
+        $.ajax({
+            type: "POST",
+            url: $("form[name='AddUser']").attr('action'),
+            data:{'way':2, 'account':account, 'price':num},
+            dataType: "json",
+            success: function(data){
+                if(data.code == 1){
+                    window.location.href = "/Withdraw/index";
+                }else{
+                    layer.msg(data.msg);
+                    $("#submit").attr('disabled',false);
+                }
+            }
+        });
+    }
+</script>
+</html>

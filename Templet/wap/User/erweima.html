@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="__WCSS__/mui.min.css" rel="stylesheet">
+
+	<style>
+		.body{
+			line-height: px;
+		}
+		.mui-table-view-cell:after{
+			background-color: #c8c7cc;
+			margin: 0 40px;
+		}
+		.mui-table-view:before{
+			background-color: unset;
+		}
+		.mui-table-view:after{
+			background-color: unset;
+		}
+		.header{
+			background:#fff;
+			top:0;
+			box-shadow:0 0px 0px #ccc;
+			-webkit-box-shadow:0 0px 0px #ccc;
+		}
+		.imgadd{
+			position:absolute;
+			margin-top:12px;
+			width:20px;
+			right: 20px;
+		}
+		.h1erweima{
+			font-family:'微软雅黑';
+			color: #000;
+		}
+		.ul{
+			background:#fff;
+			line-height:2em;
+			/*border-radius:10px;*/
+			box-shadow:2px 0px 0 0px #ccc;
+			margin: 50px 0 0 0;
+		}
+		.p{
+			margin-left:10%;
+			font-family:'微软雅黑';
+			color:#000;
+		}
+		a{
+			color:#000;
+		}
+	</style>
+</head>
+<body style="background:#f8f8f8;">
+	<header class="mui-bar mui-bar-nav header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+			<a href="{:U('User/adderweima')}" ><img src="../Public/home/wap/images/add.png" class="imgadd"/></a>
+			<h1 class="mui-title h1erweima" >收款码管理</h1>
+	</header>
+		<ul class="mui-table-view ul">
+			<li class="mui-table-view-cell mui-collapse-content">
+			    <a href="{:U('User/wxerweima')}" class="mui-navigate-right">
+					<p class="p">微信收款码</p>
+				</a>
+			</li>
+		    <li class="mui-table-view-cell mui-collapse-content">
+		        <a href="{:U('User/zfberweima')}" class="mui-navigate-right">
+					<p class="p">支付宝收款码</p>
+		        </a>
+		    </li>
+			<!--
+			<li class="mui-table-view-cell mui-collapse-content">
+				<a href="{:U('User/usdterweima')}" class="mui-navigate-right">
+					<p class="p">USDT收款码</p>
+				</a>
+			</li>
+			-->
+			<li class="mui-table-view-cell mui-collapse-content">
+				<a href="{:U('User/yhkerweima')}" class="mui-navigate-right">
+					<p class="p">银行卡</p>
+				</a>
+			</li>
+		</ul>
+</body>
+</html>

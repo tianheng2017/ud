@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+	<link href="__WCSS__/mui.min.css" rel="stylesheet">
+	<script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+	<script type="text/javascript" src="__COM__/js/index.js" ></script>
+	<link rel="stylesheet" href="http://ym.xmlianke.top/template/mobile/new2/static/css/style.css?v=1">
+	<script src="http://ym.xmlianke.top/template/mobile/new2/static/js/mobile-util.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		body{
+			width: 100%;
+			margin: 0 auto;
+			font-family: Helvetica,PingFangSC-Regular,"Droid Sans",Arial,sans-serif;
+			line-height: 1;
+			color: #232326;
+			overflow-x: hidden;
+		}
+		.mui-table-view-cell{
+			text-align: center;
+		}
+		.mui-table-view-cell:after{
+			background-color: #c8c7cc;
+			margin:0 10px;
+		}
+		.mui-table-view:before{
+			background-color: unset;
+		}
+		.mui-table-view:after{
+			background-color: unset;
+		}
+		.mui-input-group:before{
+			height:0px
+		}
+		.mui-input-group:after{
+			height: 0px;
+		}
+		.header{
+			background:#fff;
+			top:0;
+			box-shadow:0 0px 0px #ccc;
+			-webkit-box-shadow:0 0px 0px #ccc;
+		}
+		.h1{
+			font-family:'微软雅黑';
+			color: #000;
+		}
+		.div{
+			background:#fff;
+			width: 250px;
+			margin: 0 auto;
+			left:0px;
+			right:0px;
+			border-radius:10px;
+		}
+		.img{
+			width:240px;
+		}
+		.ul{
+			margin-top: 30px;
+			background:#fff;
+			line-height:2em;
+		}
+		.li{
+			margin:0 auto;
+			font-family:'微软雅黑';
+			color:#000;
+			font-size: 0.35rem;
+		}
+		.p{
+			position:absolute;
+			left:35px;
+			bottom:12px;
+			font-family:'微软雅黑';
+			color:#000;
+		}
+		a{
+			color:#000;
+		}
+		.stimev{
+			color:red;
+		}
+	</style>
+	
+<style>
+
+.yesbtn{
+	width: 76%;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+	background:#26C4FD;
+    border-radius: 100px;
+}
+</style>
+</head>
+<body style="background:#f8f8f8;">
+<div style="background: #fff;padding-bottom: 200px;margin-top: 20px;">
+<!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>-->
+	<?php if($ewmlist['ewm_class']!=3){?>
+	<div class="mui-card-content div">
+		<img src="<?php echo $ewmlist['ewm_url'];?>" class="img"/>
+	</div>
+	<?php }?>	
+	<ul class="mui-table-view ul">
+<!--		<li class="mui-table-view-cell mui-collapse-content"><p class="li">收款类型</p><p class="p"><?//php echo  getclass($olist['class']);?></p> </li>-->
+		<?php if($ewmlist['ewm_class']==3){?>
+		<li class="mui-table-view-cell mui-collapse-content"><p class="p">银行类型</p><p class="p2"><?php echo $ewmlist['yname'];?></p> </li>
+		<li class="mui-table-view-cell mui-collapse-content"><p class="p">开户分行</p><p class="p2"><?php echo $ewmlist['ynameson'];?></p> </li>
+		<li class="mui-table-view-cell mui-collapse-content"><p class="p">持卡人</p><p class="p2"><?php echo $ewmlist['yuname'];?></p> </li>
+		<li class="mui-table-view-cell mui-collapse-content"><p class="p">卡号</p><p class="p2"><?php echo $ewmlist['ycard'];?></p> </li>
+		<?php }?>	
+			
+		<li class="mui-table-view-cell mui-collapse-content">
+			<span class="li">请在 <span class="stimev">Loading···</span> 内完成支付 <span style="color: red">{$olist.pricermb}</span> 元<br/>否则无法到账！</span>
+		</li>
+<!--		<li class="mui-table-view-cell mui-collapse-content"><p class="li">下单时间</p><p class="p"><?//php echo date("Y-m-d H:i",$olist['addtime']);?></p> </li>-->
+
+		<!--<li class="mui-table-view-cell mui-collapse-content"><p class="li">截止时间</p><p class="p stimev">Loading···</p> </li>	-->
+	</ul>
+</div>
+<script type="text/javascript">
+	function getguesssizeinfo(){
+		$.get("<?php echo U('Corem/getqiangdanxqdata',array('id'=>$roborder['id']));?>?" + Math.random(), function(json) {
+			var data=JSON.parse(json);
+			if(data.state == "1" && data.data.status==2){
+				
+			}else{
+				location.reload();
+			}
+		});
+	}
+	setTimeout(getguesssizeinfo,200);
+	setInterval(getguesssizeinfo,2000);
+	var stimev = {$stimev};
+	$(".stimev").html(formatSeconds(stimev));
+	setInterval(function(){
+		stimev=stimev-1;
+		if(stimev>0){
+			$(".stimev").html(formatSeconds(stimev));
+		}else{
+			$(".stimev").html("该订单已结束");
+			setTimeout(function(){
+				//location.reload();
+			},200);
+			
+		}
+	},1000);
+	function formatSeconds(value) {
+		var secondTime = parseInt(value);// 秒
+		var minuteTime = 0;// 分
+		var hourTime = 0;// 小时
+		if(secondTime > 60) {
+			//如果秒数大于60，将秒数转换成整数
+			//获取分钟，除以60取整数，得到整数分钟
+			minuteTime = parseInt(secondTime / 60);
+			//获取秒数，秒数取佘，得到整数秒数
+			secondTime = parseInt(secondTime % 60);
+			//如果分钟大于60，将分钟转换成小时
+			if(minuteTime > 60) {
+				//获取小时，获取分钟除以60，得到整数小时
+				hourTime = parseInt(minuteTime / 60);
+				//获取小时后取佘的分，获取分钟除以60取佘的分
+				minuteTime = parseInt(minuteTime % 60);
+			}
+		}
+		var result = "" + parseInt(secondTime) + "秒";
+
+		if(minuteTime > 0) {
+			result = "" + parseInt(minuteTime) + "分" + result;
+		}
+		if(hourTime > 0) {
+			result = "" + parseInt(hourTime) + "小时" + result;
+		}
+		return result;
+	}
+	
+</script>		
+		
+</body>
+</html>

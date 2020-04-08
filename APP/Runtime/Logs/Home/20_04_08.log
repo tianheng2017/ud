@@ -1,0 +1,246 @@
+[ 2020-04-08T20:12:30+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003490s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.2126s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+
+[ 2020-04-08T20:12:30+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002914s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0032s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000919s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000958s ]
+NOTIC: [8] Undefined variable: account E:\ud.xiangxin.me\APP\Runtime\Cache\Home\6dbce1cb7c0dde839718c0b7332903b5.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001478s ]
+
+[ 2020-04-08T20:12:43+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0020s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Undefined variable: account E:\ud.xiangxin.me\APP\Runtime\Cache\Home\6dbce1cb7c0dde839718c0b7332903b5.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2020-04-08T20:12:58+08:00 ] 127.0.0.1 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '13111111111' OR `account` = '13111111111' OR `userid` = '13111111111' ) LIMIT 1   [ RunTime:0.0044s ]
+SQL: UPDATE `ysk_user` SET `session_id`='r803ahrmln6urrgc9isev58k4g' WHERE ( `mobile` = '13111111111' OR `account` = '13111111111' OR `userid` = '13111111111' ) [ RunTime:0.0021s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '13111111111' OR `account` = '13111111111' OR `userid` = '13111111111' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `ysk_user` SET `session_id`='r803ahrmln6urrgc9isev58k4g' WHERE ( `mobile` = '13111111111' OR `account` = '13111111111' OR `userid` = '13111111111' ) [ RunTime:0.0004s ]
+
+[ 2020-04-08T20:12:58+08:00 ] 127.0.0.1 /Index/qdgame.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001435s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0030s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_system` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `ysk_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ysk_coinprice` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `ysk_coinprice` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `ysk_selcity` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `ysk_selcity` WHERE `uid` = 22 LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2020-04-08T20:13:09+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0019s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2020-04-08T20:13:11+08:00 ] 127.0.0.1 /Index/running.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0020s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0017s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0013s ]
+ERR: 非法操作:running
+
+[ 2020-04-08T20:13:19+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0031s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2020-04-08T20:13:21+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001727s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0035s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0017s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2020-04-08T20:13:30+08:00 ] 127.0.0.1 /Index/running.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0016s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0012s ]
+ERR: 非法操作:running
+
+[ 2020-04-08T20:13:33+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0019s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+

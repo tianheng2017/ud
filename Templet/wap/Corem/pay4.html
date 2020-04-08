@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+	<link href="__WCSS__/mui.min.css" rel="stylesheet">
+	<script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+	<script type="text/javascript" src="__COM__/js/index.js" ></script>
+	<style>
+		.body{
+			line-height: px;
+		}
+		.mui-table-view-cell:after{
+			background-color: #c8c7cc;
+			margin:0 10px;
+		}
+		.mui-table-view:before{
+			background-color: unset;
+		}
+		.mui-table-view:after{
+			background-color: unset;
+		}
+		.mui-input-group:before{
+			height:0px
+		}
+		.mui-input-group:after{
+			height: 0px;
+		}
+		.header{
+			background:#fff;
+			top:0;
+			box-shadow:0 0px 0px #ccc;
+			-webkit-box-shadow:0 0px 0px #ccc;
+		}
+		.h1{
+			font-family:'微软雅黑';
+			color: #000;
+		}
+		.div{
+			background:#fff;
+			height:160px;
+			width:175px;
+			top:80px;
+			margin:auto;
+			left:0px;
+			right:0px;
+			border-radius:10px;
+			box-shadow:2px 0px 20px 0px #007AFF;
+		}
+		.img{
+			width:120px;
+			margin-left:26px;
+			margin-top:20px;
+		}
+		.ul{
+			margin-top: 210px;
+			background:#fff;
+			line-height:2em;
+		}
+		.li{
+			margin-left:10%;
+			font-family:'微软雅黑';
+			color:#000;
+		}
+		.p{
+			position:absolute;
+			right:35px;
+			bottom:12px;
+			font-family:'微软雅黑';
+			color:#000;
+		}
+		a{
+			color:#000;
+		}
+	</style>
+	
+<style>
+
+.yesbtn{
+	width: 76%;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+	background:#26C4FD;
+    border-radius: 100px;
+}
+</style>
+</head>
+<body style="background:#f8f8f8;">
+<style>
+.loadingdivs {
+	width: 20rem;
+	height: auto;
+	border-radius: 10px;
+	z-index: 9;
+	background: rgb(255, 255, 255);
+	border: 1px solid #ccc;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin-left: -10rem;
+	margin-top: -10rem;
+}
+.clobtn{
+	width: 76%;
+    color: #fff;
+    border: 1px solid rgba(207, 207, 207, 0.3);
+    background-color: rgba(164, 164, 164, 0.35);
+    border-radius: 100px;
+}
+</style>
+
+
+	<div class="loadingdivs loadingdiv">
+		
+		<div style="width:100%;text-align:center;margin-top: 20px;">
+			<img class="loagingimg" src="../../../Public/home/wap/images/loadingimg/loading8.gif" style="width:50%;border-radius: 1000px;" />
+		</div>
+		<div style="width:100%;text-align:center;margin-top: 10px;font-size: 12px;">
+			支付超时！
+		</div>
+		
+		<div style="width:100%;text-align:center;margin: 20px 0 10px 0;display:none;">
+			<button type="button" class="mui-btn mui-btn-danger yesbtn" onclick="javascript:history.go(-1)"></button>
+		</div>
+		<div style="width:100%;text-align:center;margin: 5px 0 20px 0;display:;">
+			<button type="button" class="mui-btn mui-btn-danger clobtn" onclick="javascript:history.go(-1)">返回</button>
+		</div>
+	</div>
+		
+		
+		
+		
+		
+		
+<script type="text/javascript">	
+
+
+
+
+	
+	function getguesssizeinfo(){
+		$.get("<?php echo U('Corem/getqiangdanxqdata',array('id'=>$roborder['id']));?>?" + Math.random(), function(json) {
+			var data=JSON.parse(json);
+			if(data.state == "1" && data.data.status==4){
+				
+			}else{
+				location.reload();
+			}
+		});
+	}
+	setTimeout(getguesssizeinfo,200);
+	setInterval(getguesssizeinfo,2000);
+	
+</script>		
+		
+</body>
+</html>

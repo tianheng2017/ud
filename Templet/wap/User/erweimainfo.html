@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="__WCSS__/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@1.6/lib/index.css">
+	<script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+	<script type="text/javascript" src="__COM__/js/index.js" ></script>
+	<script type="text/javascript" src="__COM__/js/public.js" ></script>
+	<script type="text/javascript" src="__COM__/js/common.js" ></script>
+	<style>
+		.body{
+			line-height: px;
+		}
+		.mui-table-view-cell:after{
+			left: 0px;
+			background-color:#292828;
+		}
+		.mui-table-view:before{
+			background-color:#292828;
+		}
+		.mui-table-view:after{
+			background-color:#292828;
+		}
+	</style>
+	<style>
+			/*跨webview需要手动指定位置*/
+			
+			.mui-plus header.mui-bar {
+				display: none!important;
+			}
+			.mui-plus .mui-bar-nav~.mui-content {
+				padding:0!important;
+			}
+			
+			.mui-plus .plus{
+				display: inline;
+			}
+			
+			.plus{
+				display: none;
+			}
+			
+			#topPopover {
+				position:fixed;
+				top:16px;
+				right:6px;
+			}
+			#topPopover .mui-popover-arrow {
+				left:auto;
+				right:6px;
+			}
+			p {
+				text-indent:22px;
+			}
+			span.mui-icon {
+				font-size:14px;
+				color:#007aff;
+				margin-left:-15px;
+				padding-right:10px;
+			}
+			.mui-popover {
+				height:300px;
+			}
+			.mui-content {
+				padding:10px;
+			}
+			.header{
+				background:#fff;
+				top:0;
+				box-shadow:0 0px 0px #ccc;
+				-webkit-box-shadow:0 0px 0px #ccc;
+			}
+			.h1{
+				font-family:'微软雅黑';
+				color: #000;
+			}
+			.ul{
+				margin-top:10px;
+				background:#fff;
+				line-height:2em;
+			}
+			.p{
+				margin-left:10%;
+				font-family:'微软雅黑';
+				color:#000;
+			}
+			.p2{
+				position:absolute;
+				left:35%;
+				bottom:12px;
+				font-family:'微软雅黑';
+				font-size:1em;
+				color: #000;
+			}
+			.button{
+				position:absolute;
+				background:linear-gradient(45deg,BLUE,purple);
+				color:#fff;
+				top:12px;
+				font-size:0.7em;
+				right:20px;
+				line-height:1.5em;
+				width:80px;
+				border-radius:8px;
+				border:0px solid
+			}
+			a{
+				color:#000;
+			}
+			.mui-table-view-cell:after{
+				background-color: #c8c7cc;
+				margin: 0 40px;
+				left:0;
+			}
+			.mui-table-view:before{
+				background-color: unset;
+			}
+			.mui-table-view:after{
+				background-color: unset;
+			}
+		</style>
+</head>
+<body style="background: #f8f8f8;">
+	<header class="mui-bar mui-bar-nav header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+			<h1 class="mui-title h1"><?php if($ewminfo['ewm_class'] ==1){echo '微信';}elseif($ewminfo['ewm_class'] ==2){echo '支付宝';}elseif($ewminfo['ewm_class'] ==3){echo '转银行';}?>二维码</h1>
+		</header>
+		<br><br>
+		<ul class="mui-table-view ul">
+			<li class="mui-table-view-cell mui-collapse-content" style="display:none;"><p class="p">收款金额</p><p class="p2"><?php echo $ewminfo['ewm_price'];?></p> </li>
+			
+			<?php if($ewminfo['ewm_class']!=3){?>
+			<li class="mui-table-view-cell mui-collapse-content"><p class="p">收款账号</p><p class="p2"><?php echo $ewminfo['ewm_acc'];?></p> </li>
+			<?php }?>	
+			
+			<?php if($ewminfo['ewm_class']==3){?>
+			<li class="mui-table-view-cell mui-collapse-content"><p class="p">银行类型</p><p class="p2"><?php echo $ewminfo['yname'];?></p> </li>
+			<li class="mui-table-view-cell mui-collapse-content"><p class="p">开户分行</p><p class="p2"><?php echo $ewminfo['ynameson'];?></p> </li>
+			<li class="mui-table-view-cell mui-collapse-content"><p class="p">持卡人</p><p class="p2"><?php echo $ewminfo['yuname'];?></p> </li>
+			<li class="mui-table-view-cell mui-collapse-content"><p class="p">卡号</p><p class="p2"><?php echo $ewminfo['ycard'];?></p> </li>
+			<?php }?>	
+			
+			<li class="mui-table-view-cell mui-collapse-content"><p class="p">使用状态</p><p class="p2"><?php echo $ewminfo['state']?'启用':'停用';?></p> </li>
+			<button type="button" style="background: #FF5722;" class="button" id="delid" onclick="delewm(<?php echo $ewminfo['id'];?>)">删除</button>
+		</ul>
+		
+		<?php if($ewminfo['ewm_class']!=3){?>
+		<div class="mui-content-padded">
+			<p>
+			<a href="javascript:void(0)" id="showewm" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined" style="padding: 5px 20px;background:#26C4FD;color:#fff;border: unset;">查看二维码图片</a>
+			</p>
+		</div>
+		<div id="middlePopover" class="mui-popover" style="display:none; margin: 0 12%;opacity:1;background:none;">
+				  <img src='<?php echo $ewminfo['ewm_url'];?>' style="width:100%;"/>
+		</div>	
+		<?php }?>		
+</body>
+<script type="text/javascript">
+	$("#showewm").click(function(){
+		$("#middlePopover").css('display','block');
+	});
+
+</script>
+<script type="text/javascript">
+	function delewm(id){
+		var id = id;
+		$("#delid").attr('disabled',true)
+		$.post("{:U('User/delewmup')}",
+		{'id':id},
+		function(data){
+			if(data.code==1){
+				layer.msg(data.msg);  //,data.url);
+				setTimeout(function (args) {
+					window.location.href = "{:U('User/erweima')}";
+				}, 3000); 
+			}else{
+				layer.msg(data.msg);  //,data.url);
+			}
+		});
+	}
+
+</script>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>皇冠APP下载</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+</head>
+<style>
+*{
+	margin:0 auto;
+}
+.wx-tip{
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    left:0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    display: none;
+}
+
+.wx-tip-img{
+    position: fixed;
+    margin-top: 15px;
+    right: 15px;
+    width: 213px;
+    height: 182px;
+}
+</style>
+<body>
+<div class="wx-tip">
+    <img class="wx-tip-img" src="images/wxtip.png">
+</div>
+<div style="width:100%;text-align:center;">
+	<div style="width:100%;margin-top:5rem;">
+		<img src="icon.png" style="width:26%;max-width:120px;border-radius: 10px;" />
+	</div>
+	<div style="width:100%;margin-top:2rem;">
+		<div style="font-size:1.6em;">皇冠</div>
+		<div style="font-size:.9em;margin-top:2.6rem;color: #7f7f7f;">版本号：V 1.0.0</div>
+	</div>
+	
+	<div style="width:100%;margin-top:2rem;text-align:center;color:#ffffff;">
+		<a href="hg.apk">
+			<div style="width:60%;max-width:220px;background:#0099ff;border-radius:100px;text-align:center;padding:5px 20px;">
+				<img src="images/and.png" style="width:1.6rem;float: left;margin-left: 10px;" />
+				<span style="padding-left:1rem;display: inline-block;margin-left: -20px;height: 2rem;line-height: 2rem;color:#ffffff;">安卓下载</span>
+			</div>
+		</a>
+		<a href="itms-services://?action=download-manifest&url=https://pf.xigaodi.top/down/pl.plist">
+			<div style="width:60%;max-width:220px;background:#e91e63;border-radius:100px;text-align:center;padding:5px 20px;margin-top:1.2rem;">
+				<img src="images/ios.png" style="width:1.6rem;float: left;margin-left: 10px;" />
+				<span style="padding-left:1rem;display: inline-block;margin-left: -20px;height: 2rem;line-height: 2rem;color:#ffffff;">IOS下载</span>
+			</div>
+		</a>
+	</div>
+</div>
+<script src="jquery-1.8.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+window.onload = function () {
+    var isWx = isWeChat();
+	if (isWx) {
+		$(".wx-tip").show();
+	}
+};
+function isWeChat() {
+    var ua = window.navigator.userAgent.toLowerCase();
+    if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+        return true;
+    }
+    if (ua.match(/MicroMessenger/i) == 'wxwork') {
+        return true;
+    }
+    return false;
+}
+</script>
+
+</body>
+</html>
+
