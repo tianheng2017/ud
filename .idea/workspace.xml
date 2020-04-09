@@ -3,9 +3,51 @@
   <component name="ChangeListManager">
     <list default="true" id="fe29c47a-cc2a-4a1e-93d9-0128ecd584d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Home/Controller/UserController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Home/Controller/UserController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Logs/Home/20_04_09.log" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Logs/Home/20_04_09.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templet/wap/User/xinxi.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templet/wap/User/xinxi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Home/Controller/WithdrawController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Home/Controller/WithdrawController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/0fd7447b0700808a7a6e255e639be75b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/3b9017cb91ba0b670104013a3d5c8e90.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/3d168161eaaf15bae89d3bf67799a47b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/4d73593ea9413cb83b430e59017e71c1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/540e51629934de099727f1afba9c0afc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/56d5e34f819a0d788f64ad813f5b8e22.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/60dda32da550c2bcadbf7e515086a5c1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/71b4270cf0cbb6f68b06b505e96ee713.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/811e28fddfaa5b1318affe893598a192.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/83507804a92d4dd9c388590b9289ddd0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/8fd6b234c39ab44597174344d0ff6ecd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/980bc1dae3f1e3a8198b1760a01cb9b0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/b3f9b4b990f07db633b5c6a5a0a5f8cf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/babc45aece350c17d8da7c7fc82e6283.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/c17ee00ea4af0522c1ce33ae29fcfb41.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/c3597ce05c8b81c5f841a7b8c4ff5b41.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/db06f4169661b22e51dd3cba16ebfb4b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Admin/e6ec180eceab7c3fd88cdd0ff446dca9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/0c948f55512717dff54d61818eb91819.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/1ec745a38b90c432b3e3d23fe4d1a849.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/4772ebaf29ab6cefdb6fad7bbf1fc24c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/4d8b0b24789134e39153ff51fcc428f8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/6dbce1cb7c0dde839718c0b7332903b5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/7985812848ef0005140b03816a727705.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/7aea1163cd8ead5bbc4419570caa8920.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/7fc14177bc718f8e1b0b4ceb4d2829f3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/9142be891bea7e4cbb9301c00faee094.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/9a5c2908a846f12a37eae8c23b7875a6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/a3fc2fa9d332cfb25bb2baa18e150e75.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/b8e8ec4da2584d87dadcde7eae9b6727.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/bb70043cd2e1138e5b222d4b901b7fcf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/c0d94c5f6ba22228e7680057d964a661.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/dbf16cd2f6c98e10c5ecd5b613d37980.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/e0c8f8ca8b48aafb7bbcd9f6399f4152.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/e53758c03bc3c1ca67bcf5e3ba079a72.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/e86f65718867b6f9f44bc38bcfb5e916.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/ed13e724fa803a1cda6c509002e34a55.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Logs/Admin/20_04_06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Logs/Admin/20_04_08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Logs/Home/20_04_06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Logs/Home/20_04_08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Logs/Home/20_04_09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templet/wap/withdraw/tixian.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templet/wap/withdraw/tixian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templet/wap/withdraw/tixian2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templet/wap/withdraw/tixian2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +97,7 @@
       <workItem from="1585835392007" duration="2441000" />
       <workItem from="1586051818464" duration="24000" />
       <workItem from="1586145705967" duration="25016000" />
-      <workItem from="1586348222035" duration="8117000" />
+      <workItem from="1586348222035" duration="9458000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1586353066184</created>
@@ -92,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586430613618</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit">
+      <created>1586432302989</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586432302989</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,10 +152,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1586430612299">
+    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1586432301751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586430612299" />
+    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586432301751" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1586176681140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

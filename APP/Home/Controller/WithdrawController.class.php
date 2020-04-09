@@ -47,6 +47,12 @@ class WithdrawController extends CommonController {
 				$data['msg'] = '没有此提币类型';
 				$this->ajaxReturn($data);exit;
 			}
+            if (($save['way'] == 1 && empty($ulist['usdt_erc20'])) || ($save['way'] == 2 && empty($ulist['usdt_omini']))){
+                $data['code'] = 0;
+                $data['msg'] = '还没有设置'.$arr[$save['way']].'地址, 请前往个人信息设置';
+                $this->ajaxReturn($data);exit;
+            }
+            $save['account'] = ($save['way'] == 1) ? $ulist['usdt_erc20'] : $ulist['usdt_omini'];
             $save['way'] = $arr[$save['way']];
             $last = M('userrob')->where(array('uid'=>$uid))->order('id desc')->find();
 			if (time()-$last['finishtime'] < 60*60*4){
