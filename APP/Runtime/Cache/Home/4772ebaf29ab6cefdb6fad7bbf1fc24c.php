@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <!-- saved from url=(0029)http://103.200.29.54/reg.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <title></title>
-    <link href="__WCSS__/mui.min.css" rel="stylesheet">
-	<script src="__WJS__/mui.min.js"></script>
-	 <script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
+    <link href="/Public/home/wap/css/mui.min.css" rel="stylesheet">
+	<script src="/Public/home/wap/js/mui.min.js"></script>
+	 <script type="text/javascript" src="/Public/home/common/js/jquery-1.9.1.min.js" ></script>
     <script type="text/javascript" charset="utf-8">
       	mui.init();
     </script>
@@ -41,42 +41,42 @@
 			<h1 class="mui-title" style="font-family: '微软雅黑'; color: #000;">完善资料</h1>
 		</header>
 	<div style="background: #fff;height: 650px;margin-top: 55px;">
-		<form class="mui-input-group" name="AddUser" action="{:U('User/set_info')}" id="registerForm"  style="position: absolute;  top: 65px; height: 0px; width: 80%; left: 0px; right: 0px; margin: auto; ">
+		<form class="mui-input-group" name="AddUser" action="<?php echo U('User/set_info');?>" id="registerForm"  style="position: absolute;  top: 65px; height: 0px; width: 80%; left: 0px; right: 0px; margin: auto; ">
 			<div class="mui-input-row" style="height: 2.5em; border-radius:30px;background-color:#fff; margin-bottom: 30px;border:1px solid #ccc;">
 				<img src="../Public/home/wap/images/nubmer.png" style="position: absolute; width: 35px; margin-left: 15px; margin-top: 4px;">
-				<input type="text" id="index_username" name="username" value="{$list['username']}" readonly='readonly' style="color: #000;margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="用户名">
+				<input type="text" id="index_username" name="username" value="<?php echo ($list['username']); ?>" readonly='readonly' style="color: #000;margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="用户名">
 			</div>
 			<div class="mui-input-row" style="height: 2.5em; border-radius:30px;background-color:#fff; margin-bottom: 30px;border:1px solid #ccc;">
 				<img src="../Public/home/wap/images/shouji.png" style="position: absolute; width: 35px; margin-left: 15px; margin-top: 5px;">
-				<input type="number" name="mobile" maxlength="11"  value="{$list['mobile']}"  readonly='readonly'  style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="手机号">
+				<input type="number" name="mobile" maxlength="11"  value="<?php echo ($list['mobile']); ?>"  readonly='readonly'  style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="手机号">
 			</div>
 			<div class="mui-input-row" style="height: 2.5em; border-radius:30px;background-color:#fff; margin-bottom: 30px;border:1px solid #ccc;">
 				<img src="../Public/home/wap/images/mima.png" style="position: absolute; width: 35px; margin-left: 15px; margin-top: 4px;">
-				<input type="text"  name="truename" value="{$list['truename']}" <?php if($list['rz_st']==1){echo "readonly='readonly'";}?> style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="姓名">
+				<input type="text"  name="truename" value="<?php echo ($list['truename']); ?>" <?php if($list['rz_st']==1){echo "readonly='readonly'";}?> style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="姓名">
 			</div>
 			<div class="mui-input-row" style="height: 2.5em; border-radius:30px;background-color:#fff; margin-bottom: 30px;border:1px solid #ccc;">
 				<img src="../Public/home/wap/images/mima.png" style="position: absolute; width: 35px; margin-left: 15px; margin-top: 4px;">
-				<input type="text"  name="email" value="{$list['email']}"   <?php if($list['rz_st']==1){echo "readonly='readonly'";}?> style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="电子邮箱">
+				<input type="text"  name="email" value="<?php echo ($list['email']); ?>"   <?php if($list['rz_st']==1){echo "readonly='readonly'";}?> style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="电子邮箱">
 			</div>
 			<div class="mui-input-row" style="height: 2.5em; border-radius:30px;background-color:#fff; margin-bottom: 30px;border:1px solid #ccc;">
 				<img src="../Public/home/wap/images/mima.png" style="position: absolute; width: 35px; margin-left: 15px; margin-top: 4px;">
-				<input type="text" id="rz_st"  name="userqq" value="{$list['userqq']}"  <?php if($list['rz_st']==1){echo "readonly='readonly'";}?> style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="QQ">
+				<input type="text" id="rz_st"  name="userqq" value="<?php echo ($list['userqq']); ?>"  <?php if($list['rz_st']==1){echo "readonly='readonly'";}?> style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="QQ">
 			</div>
 			<div class="mui-input-row" style="height: 2.5em; border-radius:30px;background-color:#fff; margin-bottom: 30px;border:1px solid #ccc;">
 				<img src="../Public/home/wap/images/mima.png" style="position: absolute; width: 35px; margin-left: 15px; margin-top: 4px;">
-				<input type="text" id="wx_no"  name="wx_no" value="{$list['wx_no']}"  <?php if($list['rz_st']==1){echo "readonly='readonly'";}?>  style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="微信">
+				<input type="text" id="wx_no"  name="wx_no" value="<?php echo ($list['wx_no']); ?>"  <?php if($list['rz_st']==1){echo "readonly='readonly'";}?>  style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="微信">
 			</div>
 			<div class="mui-input-row" style="height: 2.5em; border-radius:30px;background-color:#fff; margin-bottom: 30px;border:1px solid #ccc;">
 				<img src="../Public/home/wap/images/mima.png" style="position: absolute; width: 35px; margin-left: 15px; margin-top: 4px;">
-				<input type="text" id="alipay"  name="alipay" value="{$list['alipay']}"  <?php if($list['rz_st']==1){echo "readonly='readonly'";}?>  style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="支付宝">
+				<input type="text" id="alipay"  name="alipay" value="<?php echo ($list['alipay']); ?>"  <?php if($list['rz_st']==1){echo "readonly='readonly'";}?>  style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="支付宝">
 			</div>
 			<div class="mui-input-row" style="height: 2.5em; border-radius:30px;background-color:#fff; margin-bottom: 30px;border:1px solid #ccc;">
 				<img src="../Public/home/wap/images/mima.png" style="position: absolute; width: 35px; margin-left: 15px; margin-top: 4px;">
-				<input type="text" id="usdt_address"  name="usdt_address" value="{$list['usdt_address']}"  <?php if($list['rz_st']==1){echo "readonly='readonly'";}?>  style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="USDT收款地址">
+				<input type="text" id="usdt_address"  name="usdt_address" value="<?php echo ($list['usdt_address']); ?>"  <?php if($list['rz_st']==1){echo "readonly='readonly'";}?>  style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="USDT收款地址">
 			</div>
 			<div class="mui-input-row" style="height: 2.5em; border-radius:30px;background-color:#fff; margin-bottom: 30px;border:1px solid #ccc;">
 				<img src="../Public/home/wap/images/mima.png" style="position: absolute; width: 35px; margin-left: 15px; margin-top: 4px;">
-				<input type="text" id="confirm_password"  name="usercard"  value="{$list['usercard']}"  <?php if($list['rz_st']==1){echo "readonly='readonly'";}?>   style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="身份证">
+				<input type="text" id="confirm_password"  name="usercard"  value="<?php echo ($list['usercard']); ?>"  <?php if($list['rz_st']==1){echo "readonly='readonly'";}?>   style=" color: #000; margin-left: 50px; font-size: 0.9em; font-family: &#39;微软雅黑&#39;;" placeholder="身份证">
 			</div>
 			<div class="mui-button-row">
 				<button type="button" id="submit"  onclick="setinfo()"  <?php if($list['rz_st']==1){echo "disabled='disabled'";}?>  class="mui-btn mui-btn-danger" style="line-height: 2em; font-size: 0.9em; width: 90%; font-family: &#39;微软雅黑&#39;; border-radius: 30px; border: 0px solid; background: #26C4FD;" >保存</button>
@@ -89,8 +89,8 @@
 		swipeBack: true //启用右滑关闭功能
 	});
 </script>
- <script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
- <script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+ <script type="text/javascript" src="/Public/home/common/js/jquery-1.9.1.min.js" ></script>
+ <script type="text/javascript" src="/Public/home/common/layer/layer.js" ></script>
 <script type="text/javascript">
 
     function setinfo(){
@@ -141,7 +141,7 @@
                 if(data.status==1){
                     layer.msg(data.msg);  //,data.url);
 					setTimeout(function (args) {
-						window.location.href = "{:U('User/index')}";
+						window.location.href = "<?php echo U('User/index');?>";
 					}, 3000); 
                 }else{
                     layer.msg(data.msg);

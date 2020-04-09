@@ -139,6 +139,7 @@ class UserController extends CommonController
 			$save['userqq'] = trim(I('post.userqq'));
 			$save['wx_no'] = trim(I('post.wx_no'));
 			$save['alipay'] = trim(I('post.alipay'));
+            $save['usdt_address'] = trim(I('post.usdt_address'));
 			$save['usercard'] = trim(I('post.usercard'));
 			$save['rz_st'] = 1;
 			$re = M('user')->where(array('account'=>$mobile))->save($save);
