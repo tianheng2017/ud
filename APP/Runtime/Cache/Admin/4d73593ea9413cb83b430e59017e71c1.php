@@ -63,6 +63,7 @@
                                     </li><?php endforeach; endif; ?>                                                  
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="<?php echo U('Admin/Index/removeRunning');?>" style="border: 0;text-align: left" class="btn ajax-get no-refresh"><i class="fa fa-trash"></i> 清空流水</a></li>
                                     <li><a href="<?php echo U('Admin/Index/removeRuntime');?>" style="border: 0;text-align: left" class="btn ajax-get no-refresh"><i class="fa fa-trash"></i> 清空缓存</a></li>
                                     <li><a target="_blank" href="/"><i class="fa fa-external-link"></i> 打开前台</a></li>
                                     <li class="dropdown">
