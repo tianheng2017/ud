@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title></title>
-    <link href="__WCSS__/mui.min.css" rel="stylesheet"/>
+    <link href="/Public/home/wap/css/mui.min.css" rel="stylesheet"/>
 	<style>
 		.body{
 			line-height: px;
@@ -199,9 +199,9 @@
 		
 		<div style="background: #fff;height: 110px;margin-top: 55px;">
 			<span class="span">直推 / 人</span>
-			<span class="span1">{$zcount}</span>
+			<span class="span1"><?php echo ($zcount); ?></span>
 			<span class="span" style="right: 10%;left: auto;">团队 / 人</span>
-			<span class="span1" style="right: 10%;left: auto;">{$tcount}</span>
+			<span class="span1" style="right: 10%;left: auto;"><?php echo ($tcount); ?></span>
 		</div>
 		
 		
@@ -211,41 +211,45 @@
 			<li class="mui-table-view-cell mui-media  mui-collapse mui-collapse-content">
 				<img src="../Public/home/wap/images/dai.png" class="imgg" />
 				<p class="p3">今日我的业绩</p>
-				<p class="p4">{$meallmj} RMB</p>
+				<p class="p4"><?php echo ($meallmj); ?> RMB</p>
 			</li>
 			
 			<li class="mui-table-view-cell mui-media  mui-collapse mui-collapse-content">
 				<img src="../Public/home/wap/images/shou.png" class="imgg" />
 				<p class="p3">今日团队业绩</p>
-				<p class="p4">{$tallmj} RMB</p>
+				<p class="p4"><?php echo ($tallmj); ?> RMB</p>
 
 			</li>
 			
 			<li class="mui-table-view-cell mui-collapse-content">
 				<img src="../Public/home/wap/images/yongjin.png" class="imgg" style="width: 45px; margin-left: 7px; bottom: 20px;"/>
 				<p class="p3">我的业绩</p>
-				<p class="p4">{$meallm} RMB</p>
+				<p class="p4"><?php echo ($meallm); ?> RMB</p>
 			</li>
 			
 			<li class="mui-table-view-cell mui-collapse-content">
 				<img src="../Public/home/wap/images/jiangli.png" class="imgg"/>
 				<p class="p3">团队业绩</p>
-				<p class="p4">{$tallm} RMB</p>
+				<p class="p4"><?php echo ($tallm); ?> RMB</p>
 			</li>
+			
 		</ul>
+		
+		
+		
+		
+		
 		<div class="mui-card-content divc">
 			会员信息(三代)
 		</div>
 		<ul class="mui-table-view ul" style="margin:0;">
-			<foreach name='list' item='info'>
-				<li class="mui-table-view-cell mui-collapse-content">
+			<?php if(is_array($list)): foreach($list as $key=>$info): ?><li class="mui-table-view-cell mui-collapse-content">
 					<p class="p">
-						{$info.mobile}
+						<?php echo ($info["mobile"]); ?>
 						<span style="float: right;margin-right: 25px;"><?php echo date('Y-m-d H:i',$info['reg_date']);?></span>
-						<span style="float: right;margin-right: 25px;">{$info.cpriceproportion}</span>
+						<span style="float: right;margin-right: 25px;"><?php echo ($info["cpriceproportion"]); ?></span>
 					</p>
-				</li>
-			</foreach>
+				</li><?php endforeach; endif; ?>
 		</ul>
 			
 </body>

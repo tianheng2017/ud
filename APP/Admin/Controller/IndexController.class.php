@@ -74,7 +74,18 @@ class IndexController extends AdminController {
 
 	}
 
-
+    /**
+     * 删除流水
+     */
+    public function removeRunning()
+    {
+        $result = M('running')->where('1')->delete();
+        if ($result) {
+            $this->success("流水清理成功");
+        } else {
+            $this->error("流水清理失败");
+        }
+    }
 
 
     /**
@@ -85,9 +96,9 @@ class IndexController extends AdminController {
         $file   = new \Util\File();
         $result = $file->del_dir(RUNTIME_PATH);
         if ($result) {
-            $this->success("缓存清理成功1");
+            $this->success("缓存清理成功");
         } else {
-            $this->error("缓存清理失败1");
+            $this->error("缓存清理失败");
         }
     }
 }

@@ -692,8 +692,8 @@ class UserController extends CommonController
 		
 		$count =$userobj->where(array('superioruid'=>$uid))->count();
 		//$p = $this->getpage($count,15);
-		
-		$list = $userobj->where (array('superioruid'=>$uid))->order ( 'userid desc' )->limit ( $p->firstRow, $p->listRows )->select ();
+        $map['_query'] = 'pid='.$uid.'&gid='.$uid.'&ggid='.$uid.'&_logic=or';
+		$list = $userobj->where ($map)->order ( 'userid desc' )->limit ( $p->firstRow, $p->listRows )->select ();
 		/*
 		foreach($list as $k=>$v){
 			$Index = new IndexController;
