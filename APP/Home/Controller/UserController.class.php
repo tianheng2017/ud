@@ -142,6 +142,12 @@ class UserController extends CommonController
             $save['usdt_erc20'] = trim(I('post.usdt_erc20'));
             $save['usdt_omini'] = trim(I('post.usdt_omini'));
 			$save['usercard'] = trim(I('post.usercard'));
+            $repet = M('user')->where(array('usercard'=>$save['usercard']))->find();
+            if (!empty($repet)){
+                $re_data['status'] = 0;
+                $re_data['message'] = "该身份证已存在";
+                $this->ajaxReturn($re_data);exit;
+            }
 			$save['rz_st'] = 1;
 			$re = M('user')->where(array('account'=>$mobile))->save($save);
 			if($re){
