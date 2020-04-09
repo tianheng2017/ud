@@ -44,6 +44,12 @@ class LoginController extends Controller
                 $re_data['message'] = "年龄介于18-65岁才能注册";
                 $this->ajaxReturn($re_data);exit;
             }
+			$repet = M('user')->where(array('usercard'=>$usercard))->find();
+			if (!empty($repet)){
+                $re_data['status'] = 0;
+                $re_data['message'] = "该身份证已存在";
+                $this->ajaxReturn($re_data);exit;
+            }
 
 			//$safety_pwd = trim(I('post.safety_pwd'));
 			$salt = strrand(4);

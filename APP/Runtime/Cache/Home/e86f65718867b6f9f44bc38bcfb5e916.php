@@ -232,13 +232,7 @@
 				<p class="p3">团队业绩</p>
 				<p class="p4"><?php echo ($tallm); ?> RMB</p>
 			</li>
-			
 		</ul>
-		
-		
-		
-		
-		
 		<div class="mui-card-content divc">
 			会员信息(三代)
 		</div>

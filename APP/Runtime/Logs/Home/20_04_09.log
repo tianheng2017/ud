@@ -1898,3 +1898,962 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
 
+[ 2020-04-09T21:02:32+08:00 ] 127.0.0.1 /User/myteam.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003283s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0036s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0028s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'firstRow' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'listRows' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+SQL: SELECT * FROM `ysk_user` WHERE ( `pid` = '22' OR `gid` = '22' OR `ggid` = '22' ) ORDER BY userid desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_regpath` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 AND `lown` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid='22'  [ RunTime:0.0013s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0004s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid='22'  [ RunTime:0.0004s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2020-04-09T21:02:33+08:00 ] 127.0.0.1 /User/myteam.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002814s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0017s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'firstRow' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'listRows' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+SQL: SELECT * FROM `ysk_user` WHERE ( `pid` = '22' OR `gid` = '22' OR `ggid` = '22' ) ORDER BY userid desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_regpath` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 AND `lown` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid='22'  [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid='22'  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2020-04-09T21:02:35+08:00 ] 127.0.0.1 /User/myteam.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001381s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0018s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'firstRow' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'listRows' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+SQL: SELECT * FROM `ysk_user` WHERE ( `pid` = '22' OR `gid` = '22' OR `ggid` = '22' ) ORDER BY userid desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_regpath` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 AND `lown` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid='22'  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid='22'  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2020-04-09T21:02:36+08:00 ] 127.0.0.1 /User/myteam.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001457s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0017s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'firstRow' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'listRows' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+SQL: SELECT * FROM `ysk_user` WHERE ( `pid` = '22' OR `gid` = '22' OR `ggid` = '22' ) ORDER BY userid desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ysk_regpath` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 AND `lown` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid='22'  [ RunTime:0.0017s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid='22'  [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2020-04-09T21:02:37+08:00 ] 127.0.0.1 /User/myteam.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0017s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'firstRow' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'listRows' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+SQL: SELECT * FROM `ysk_user` WHERE ( `pid` = '22' OR `gid` = '22' OR `ggid` = '22' ) ORDER BY userid desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_regpath` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 AND `lown` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid='22'  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid='22'  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2020-04-09T21:02:37+08:00 ] 127.0.0.1 /User/myteam.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002314s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'firstRow' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'listRows' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+SQL: SELECT * FROM `ysk_user` WHERE ( `pid` = '22' OR `gid` = '22' OR `ggid` = '22' ) ORDER BY userid desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_regpath` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 AND `lown` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid='22'  [ RunTime:0.0012s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid='22'  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2020-04-09T21:02:37+08:00 ] 127.0.0.1 /User/myteam.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'firstRow' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'listRows' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+SQL: SELECT * FROM `ysk_user` WHERE ( `pid` = '22' OR `gid` = '22' OR `ggid` = '22' ) ORDER BY userid desc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ysk_regpath` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 AND `lown` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid='22'  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid='22'  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2020-04-09T21:03:05+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2020-04-09T21:03:06+08:00 ] 127.0.0.1 /User/shezhi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0014s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2020-04-09T21:03:08+08:00 ] 127.0.0.1 /User/Loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001470s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0014s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0017s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-04-09T21:03:08+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Undefined variable: account E:\ud.xiangxin.me\APP\Runtime\Cache\Home\6dbce1cb7c0dde839718c0b7332903b5.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2020-04-09T21:03:11+08:00 ] 127.0.0.1 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001532s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '18223654784' OR `account` = '18223654784' OR `userid` = '18223654784' ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-09T21:03:19+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0016s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+
+[ 2020-04-09T21:03:19+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Undefined variable: account E:\ud.xiangxin.me\APP\Runtime\Cache\Home\6dbce1cb7c0dde839718c0b7332903b5.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2020-04-09T21:03:49+08:00 ] 127.0.0.1 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002733s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '18223654784' OR `account` = '18223654784' OR `userid` = '18223654784' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `ysk_user` SET `session_id`='r803ahrmln6urrgc9isev58k4g' WHERE ( `mobile` = '18223654784' OR `account` = '18223654784' OR `userid` = '18223654784' ) [ RunTime:0.0022s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '18223654784' OR `account` = '18223654784' OR `userid` = '18223654784' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `ysk_user` SET `session_id`='r803ahrmln6urrgc9isev58k4g' WHERE ( `mobile` = '18223654784' OR `account` = '18223654784' OR `userid` = '18223654784' ) [ RunTime:0.0005s ]
+
+[ 2020-04-09T21:03:49+08:00 ] 127.0.0.1 /Index/qdgame.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_system` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ysk_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `ysk_coinprice` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `ysk_coinprice` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `ysk_selcity` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `ysk_selcity` WHERE `uid` = 24 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2020-04-09T21:03:51+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2020-04-09T21:03:54+08:00 ] 127.0.0.1 /User/myteam.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002317s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'firstRow' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'listRows' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+SQL: SELECT * FROM `ysk_user` WHERE ( `pid` = '24' OR `gid` = '24' OR `ggid` = '24' ) ORDER BY userid desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_regpath` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 24 AND `lown` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 24 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid='24'  [ RunTime:0.0006s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='24' )  [ RunTime:0.0004s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid='24'  [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='24' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2020-04-09T21:03:59+08:00 ] 127.0.0.1 /User/Sharecode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001965s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0025s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `u_yqm` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: aurl E:\ud.xiangxin.me\ThinkPHP\Library\Vendor\phpqrcode\phpqrcode.php 第 3101 行.
+NOTIC: [2] file_get_contents(Uploads/erweima/logo.png): failed to open stream: No such file or directory E:\ud.xiangxin.me\ThinkPHP\Library\Vendor\phpqrcode\phpqrcode.php 第 3115 行.
+NOTIC: [2] imagecreatefromstring(): Empty string or invalid image E:\ud.xiangxin.me\ThinkPHP\Library\Vendor\phpqrcode\phpqrcode.php 第 3115 行.
+NOTIC: [2] imagesx() expects parameter 1 to be resource, bool given E:\ud.xiangxin.me\ThinkPHP\Library\Vendor\phpqrcode\phpqrcode.php 第 3121 行.
+NOTIC: [2] imagesy() expects parameter 1 to be resource, bool given E:\ud.xiangxin.me\ThinkPHP\Library\Vendor\phpqrcode\phpqrcode.php 第 3122 行.
+NOTIC: [2] Division by zero E:\ud.xiangxin.me\ThinkPHP\Library\Vendor\phpqrcode\phpqrcode.php 第 3128 行.
+NOTIC: [2] imagecopyresampled() expects parameter 2 to be resource, bool given E:\ud.xiangxin.me\ThinkPHP\Library\Vendor\phpqrcode\phpqrcode.php 第 3132 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2020-04-09T21:04:02+08:00 ] 127.0.0.1 /Login/register/mobile/Mbb6jYTKurKv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001468s ]
+
+[ 2020-04-09T21:04:15+08:00 ] 127.0.0.1 /Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `ysk_user` WHERE `u_yqm` = 'Mbb6jYTKurKv' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `account` = '18223432699' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `mobile` = '18223432699' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `ysk_user` (`pid`,`gid`,`ggid`,`account`,`mobile`,`u_yqm`,`username`,`login_pwd`,`login_salt`,`truename`,`usercard`,`reg_date`,`reg_ip`,`status`,`path`,`use_grade`,`u_ztnum`,`tx_status`,`superioruid`,`regpath`) VALUES ('24','22','0','18223432699','18223432699','TLwW0JWsD5aK','1123123123','bf70571d52c9441a3b4c29a0a9d11555','qflk','分为氛围1','511622199109205855','1586437455','127.0.0.1','1','-22-24-','1','0','1','24','') [ RunTime:0.0020s ]
+SQL: SELECT `userid` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_regpath` [ RunTime:0.0012s ]
+SQL: INSERT INTO `ysk_regpath` (`uid`,`uidsubordinate`,`uiduidsubordinatesuperior`,`lown`,`regtime`) VALUES ('22','25','24','2','2020-04-09 21:04:15') [ RunTime:0.0015s ]
+SQL: INSERT INTO `ysk_regpath` (`uid`,`uidsubordinate`,`uiduidsubordinatesuperior`,`lown`,`regtime`) VALUES ('24','25','24','1','2020-04-09 21:04:15') [ RunTime:0.0013s ]
+SQL: UPDATE `ysk_user` SET `regpath`='22,24' WHERE `userid` = 25 [ RunTime:0.0014s ]
+SQL: UPDATE `ysk_user` SET `u_ztnum`=u_ztnum+1 WHERE `userid` = 24 [ RunTime:0.0014s ]
+
+[ 2020-04-09T21:04:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002645s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0018s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0022s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-09T21:04:32+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002427s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0027s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0026s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2020-04-09T21:04:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005322s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0024s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-09T21:04:35+08:00 ] 127.0.0.1 /Index/running.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001883s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_running` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ysk_running` WHERE `uid` = 24 ORDER BY time asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2020-04-09T21:04:36+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001532s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0015s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2020-04-09T21:04:39+08:00 ] 127.0.0.1 /User/myteam.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'firstRow' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'listRows' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+SQL: SELECT * FROM `ysk_user` WHERE ( `pid` = '24' OR `gid` = '24' OR `ggid` = '24' ) ORDER BY userid desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_regpath` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 24 AND `lown` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid='24'  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='24' )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid='24'  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='24' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2020-04-09T21:04:43+08:00 ] 127.0.0.1 /User/shezhi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002255s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2020-04-09T21:04:45+08:00 ] 127.0.0.1 /User/Loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-04-09T21:04:45+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8] Undefined variable: account E:\ud.xiangxin.me\APP\Runtime\Cache\Home\6dbce1cb7c0dde839718c0b7332903b5.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2020-04-09T21:04:52+08:00 ] 127.0.0.1 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '18223432616' OR `account` = '18223432616' OR `userid` = '18223432616' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-04-09T21:05:04+08:00 ] 127.0.0.1 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002163s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '13111111111' OR `account` = '13111111111' OR `userid` = '13111111111' ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-09T21:05:07+08:00 ] 127.0.0.1 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '13111111111' OR `account` = '13111111111' OR `userid` = '13111111111' ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-09T21:05:11+08:00 ] 127.0.0.1 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '13111111111' OR `account` = '13111111111' OR `userid` = '13111111111' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `ysk_user` SET `session_id`='r803ahrmln6urrgc9isev58k4g' WHERE ( `mobile` = '13111111111' OR `account` = '13111111111' OR `userid` = '13111111111' ) [ RunTime:0.0018s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '13111111111' OR `account` = '13111111111' OR `userid` = '13111111111' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `ysk_user` SET `session_id`='r803ahrmln6urrgc9isev58k4g' WHERE ( `mobile` = '13111111111' OR `account` = '13111111111' OR `userid` = '13111111111' ) [ RunTime:0.0016s ]
+
+[ 2020-04-09T21:05:12+08:00 ] 127.0.0.1 /Index/qdgame.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_system` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ysk_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `ysk_coinprice` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `ysk_coinprice` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ysk_selcity` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `ysk_selcity` WHERE `uid` = 22 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2020-04-09T21:05:13+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001899s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2020-04-09T21:05:14+08:00 ] 127.0.0.1 /User/myteam.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001425s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0014s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'firstRow' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Undefined variable: p E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+NOTIC: [8] Trying to get property 'listRows' of non-object E:\ud.xiangxin.me\APP\Home\Controller\UserController.class.php 第 696 行.
+SQL: SELECT * FROM `ysk_user` WHERE ( `pid` = '22' OR `gid` = '22' OR `ggid` = '22' ) ORDER BY userid desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ysk_regpath` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 AND `lown` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_regpath` WHERE `uid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid='22'  [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0003s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid='22'  [ RunTime:0.0002s ]
+SQL: SELECT SUM(pricermb) allmoney FROM `ysk_userrob` WHERE addtime>'1586361600' and status=3 and uid in ( SELECT uidsubordinate FROM `ysk_regpath` WHERE uid='22' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
