@@ -690,7 +690,7 @@ class UserController extends CommonController
 		$uid = session('userid');
 		$userobj = M('user');
 		
-		$count =$userobj->where(array('pid'=>$uid))->count();
+		$count =$userobj->where(array('superioruid'=>$uid))->count();
 		//$p = $this->getpage($count,15);
         $map['_query'] = 'pid='.$uid.'&gid='.$uid.'&ggid='.$uid.'&_logic=or';
 		$list = $userobj->where ($map)->order ( 'userid desc' )->limit ( $p->firstRow, $p->listRows )->select ();

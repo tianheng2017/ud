@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe29c47a-cc2a-4a1e-93d9-0128ecd584d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Home/Controller/LoginController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Home/Controller/LoginController.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Home/Controller/UserController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Home/Controller/UserController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Home/e86f65718867b6f9f44bc38bcfb5e916.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Home/e86f65718867b6f9f44bc38bcfb5e916.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Logs/Admin/20_04_09.log" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Logs/Admin/20_04_09.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Runtime/Logs/Home/20_04_09.log" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Logs/Home/20_04_09.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +54,7 @@
       <workItem from="1585835392007" duration="2441000" />
       <workItem from="1586051818464" duration="24000" />
       <workItem from="1586145705967" duration="25016000" />
-      <workItem from="1586348222035" duration="12460000" />
+      <workItem from="1586348222035" duration="12818000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1586353066184</created>
@@ -129,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586437069075</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="commit">
+      <created>1586437634657</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586437634657</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,10 +144,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1586437067578">
+    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1586437633597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586437067578" />
+    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586437633597" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1586176681140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
