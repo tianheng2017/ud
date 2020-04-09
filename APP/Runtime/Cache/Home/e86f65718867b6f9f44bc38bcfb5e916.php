@@ -239,9 +239,9 @@
 		<ul class="mui-table-view ul" style="margin:0;">
 			<?php if(is_array($list)): foreach($list as $key=>$info): ?><li class="mui-table-view-cell mui-collapse-content">
 					<p class="p">
-						<?php echo ($info["mobile"]); ?>
+						<?php echo ($info["mobile"]); ?>(<?php echo ($info["lown"]); ?>)
 						<span style="float: right;margin-right: 25px;"><?php echo date('Y-m-d H:i',$info['reg_date']);?></span>
-						<span style="float: right;margin-right: 25px;"><?php echo ($info["cpriceproportion"]); ?></span>
+<!--						<span style="float: right;margin-right: 25px;"><?php echo ($info["cpriceproportion"]); ?></span>-->
 					</p>
 				</li><?php endforeach; endif; ?>
 		</ul>

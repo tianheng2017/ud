@@ -689,23 +689,21 @@ class UserController extends CommonController
 	public function myteam(){
 		$uid = session('userid');
 		$userobj = M('user');
-		
+		$arr = [1=>'一代',2=>'二代',3=>'三代'];
 		$count =$userobj->where(array('superioruid'=>$uid))->count();
 		//$p = $this->getpage($count,15);
         $map['_query'] = 'pid='.$uid.'&gid='.$uid.'&ggid='.$uid.'&_logic=or';
-		$list = $userobj->where ($map)->order ( 'userid desc' )->limit ( $p->firstRow, $p->listRows )->select ();
-		/*
+		$list = $userobj->where ($map)->order ( 'userid desc' )->limit ( $p->firstRow, $p->listRows )->select();
 		foreach($list as $k=>$v){
-			$Index = new IndexController;
-			$list[$k]['cpriceproportion'] = $Index->getucpriceproportion($v['userid']);
+		    $lown = M('regpath')->where(array('uidsubordinate'=>$v['userid']))->getField('lown');
+			$list[$k]['lown'] = $arr[$lown];
 		}
-		*/
 		
     	$this->assign ( 'list', $list ); // 賦值數據集
 		$this->assign('count',$count);
     	//$this->assign ( 'page', $p->show() ); // 賦值分頁輸出
 		
-		$zcount =M('regpath')->where(array('uid'=>$uid,'lown'=>1))->count();
+		$zcount = M('regpath')->where(array('uid'=>$uid,'lown'=>1))->count();
 		$this->assign ( 'zcount', $zcount ); 
 		
 		

@@ -179,7 +179,7 @@ class LoginController extends Controller
             // 跳转
             if (0 < $uid && $user_info['userid'] === $uid) {
                 session('in_time',time(),86400);
-                ajaxReturn('登录成功',1,U('Index/qdgame'));
+                ajaxReturn('登录成功',1,U('User/index'));
             }
         }
     }
