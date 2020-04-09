@@ -20,6 +20,5 @@ return array(
         '__IMGJS__'        => __ROOT__ . '/Public/home/wap/jsa',
 
         '__LAYERUI__'       => __ROOT__ . '/Public/home/wap/layui',
-
     ),
 );

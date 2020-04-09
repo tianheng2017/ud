@@ -22,8 +22,11 @@ class IndexController extends CommonController
         return $smoney;
     }
 
-    //每小时定时执行该函数, 每天随机生成总和为5倍的虚假流水,单次不低于10快,不高于5倍金额的6%
-    public function auto(){
+    //每小时定时执行该函数, 每天随机生成总和为5倍的虚假流水,单次生成的收入不低于10快、也不高于5倍金额的6%
+    public function auto($token){
+        if ($token <> 's23q0fw'){
+            echo 'error';exit;
+        }
         $today_start = strtotime(date('Y-m-d 00:00:00', time()));
         $today_end =  strtotime(date('Y-m-d 23:59:59', time()));
         $moneys = M('user')->where(['real'=>1])->getField('userid,money');
