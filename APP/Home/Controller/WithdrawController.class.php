@@ -36,7 +36,6 @@ class WithdrawController extends CommonController {
             ];
 			$ulist = M('user')->where(array('userid'=>$uid))->find();
 			$save['uid'] = $uid;
-			$save['account'] = trim(I('post.account'));
 			$save['name'] = $ulist['truename'];
 			$save['way'] = intval(trim(I('post.way')));
 			$save['price'] = floatval(trim(I('post.price')));
@@ -49,7 +48,7 @@ class WithdrawController extends CommonController {
 			}
             if (($save['way'] == 1 && empty($ulist['usdt_erc20'])) || ($save['way'] == 2 && empty($ulist['usdt_omini']))){
                 $data['code'] = 0;
-                $data['msg'] = '还没有设置'.$arr[$save['way']].'地址, 请前往个人信息设置';
+                $data['msg'] = '尚未设置'.$arr[$save['way']].'地址, 请前往"个人信息"设置';
                 $this->ajaxReturn($data);exit;
             }
             $save['account'] = ($save['way'] == 1) ? $ulist['usdt_erc20'] : $ulist['usdt_omini'];

@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title></title>
-    <script src="__WJS__/mui.min.js"></script>
-    <link href="__WCSS__/mui.min.css" rel="stylesheet">
+    <script src="/Public/home/wap/js/mui.min.js"></script>
+    <link href="/Public/home/wap/css/mui.min.css" rel="stylesheet">
     <script type="text/javascript" charset="utf-8">
         mui.init();
     </script>
@@ -133,7 +133,7 @@
     <div style="height: 135px;width: 100%;background: #fff;margin-top: 10px;">
         <div style="color: #000;padding: 20px 5% 10px;font-weight: bold;position: relative;">
             <span>提币地址(OMINI网络)</span>
-            <div style="padding-top: 30px;color: red;"><notempty name="user.usdt_omini">{$user.usdt_omini}<else />尚未设置usdt_omini地址</notempty></div>
+            <div style="padding-top: 30px;color: red;"><?php if(!empty($user["usdt_omini"])): echo ($user["usdt_omini"]); else: ?>尚未设置usdt_omini地址<?php endif; ?></div>
         </div>
     </div>
     <div style="height: 165px;width: 100%;background: #fff;margin-top: 10px;">
@@ -145,7 +145,7 @@
             </div>
         </div>
         <div style="color: #000;padding: 0 5%;font-weight: bold;font-size: 15px;">
-            <p>可提资产： <span id="kyye">{$user.money}</span> USDT</p>
+            <p>可提资产： <span id="kyye"><?php echo ($user["money"]); ?></span> USDT</p>
         </div>
     </div>
     <div class="mui-button-row" style="margin-top: 10px;">
@@ -153,8 +153,8 @@
     </div>
 </form>
 </body>
-<script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
-<script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+<script type="text/javascript" src="/Public/home/common/js/jquery-1.9.1.min.js" ></script>
+<script type="text/javascript" src="/Public/home/common/layer/layer.js" ></script>
 <script type="text/javascript">
     $(function () {
         var kyye = parseFloat($('#kyye').text());
@@ -163,10 +163,10 @@
         });
     });
     $('#erc20').on('click',function () {
-        window.location.href = "{:U('Withdraw/tixian')}";
+        window.location.href = "<?php echo U('Withdraw/tixian');?>";
     });
     $('#omini').on('click',function () {
-        window.location.href = "{:U('Withdraw/tixian2')}";
+        window.location.href = "<?php echo U('Withdraw/tixian2');?>";
     });
     function now(){
         var num = parseFloat($('#num').val());

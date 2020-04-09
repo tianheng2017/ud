@@ -1,0 +1,1440 @@
+[ 2020-04-09T19:47:41+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0014s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined index: usdt_erc20?:'无' E:\ud.xiangxin.me\APP\Runtime\Cache\Home\1ec745a38b90c432b3e3d23fe4d1a849.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2020-04-09T19:47:43+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003059s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0024s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2020-04-09T19:47:43+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002634s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0028s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Undefined index: usdt_erc20?:'无' E:\ud.xiangxin.me\APP\Runtime\Cache\Home\1ec745a38b90c432b3e3d23fe4d1a849.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2020-04-09T19:48:40+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003358s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0041s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0032s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2020-04-09T19:48:41+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0017s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0019s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: usdt_erc20?:'无' E:\ud.xiangxin.me\APP\Runtime\Cache\Home\1ec745a38b90c432b3e3d23fe4d1a849.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2020-04-09T19:48:42+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001999s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0023s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2020-04-09T19:48:43+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0026s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0027s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined index: usdt_erc20?:'无' E:\ud.xiangxin.me\APP\Runtime\Cache\Home\1ec745a38b90c432b3e3d23fe4d1a849.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2020-04-09T19:48:44+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002033s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0016s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0020s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2020-04-09T19:48:45+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001905s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0016s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: usdt_erc20?:'无' E:\ud.xiangxin.me\APP\Runtime\Cache\Home\1ec745a38b90c432b3e3d23fe4d1a849.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2020-04-09T19:50:17+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001892s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0018s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0012s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2020-04-09T19:50:37+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003563s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0016s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0022s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2020-04-09T19:51:15+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0030s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2020-04-09T19:51:17+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001810s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined index: usdt_omini?:'无' E:\ud.xiangxin.me\APP\Runtime\Cache\Home\7985812848ef0005140b03816a727705.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2020-04-09T19:51:18+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001471s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0026s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2020-04-09T19:51:19+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined index: usdt_omini?:'无' E:\ud.xiangxin.me\APP\Runtime\Cache\Home\7985812848ef0005140b03816a727705.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2020-04-09T19:51:20+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001418s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0019s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2020-04-09T19:51:21+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined index: usdt_omini?:'无' E:\ud.xiangxin.me\APP\Runtime\Cache\Home\7985812848ef0005140b03816a727705.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2020-04-09T19:51:43+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002415s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0016s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2020-04-09T19:51:44+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0021s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined index: usdt_omini?:'无' E:\ud.xiangxin.me\APP\Runtime\Cache\Home\7985812848ef0005140b03816a727705.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2020-04-09T19:51:58+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002981s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0027s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0026s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2020-04-09T19:51:59+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2020-04-09T19:52:00+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0024s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2020-04-09T19:52:01+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2020-04-09T19:52:10+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005267s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0021s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0026s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+
+[ 2020-04-09T19:52:11+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002181s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0023s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0034s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2020-04-09T19:52:12+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001827s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0018s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2020-04-09T19:52:13+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001844s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2020-04-09T19:52:14+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002182s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2020-04-09T19:52:15+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002768s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2020-04-09T19:52:16+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002303s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0023s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2020-04-09T19:52:23+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2020-04-09T19:58:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003517s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0018s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0026s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2020-04-09T19:58:10+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001590s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0023s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2020-04-09T19:58:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001827s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0028s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-04-09T19:58:14+08:00 ] 127.0.0.1 /User/ziliao.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0023s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2020-04-09T19:58:15+08:00 ] 127.0.0.1 /User/xinxi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2020-04-09T20:00:49+08:00 ] 127.0.0.1 /User/xinxi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001882s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0017s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2020-04-09T20:00:57+08:00 ] 127.0.0.1 /User/zichan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001904s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_system` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ysk_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_somebill` [ RunTime:0.0015s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `ysk_somebill` WHERE `uid` = 22 AND `jl_class` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0012s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_userrob` WHERE `uid` = 22 AND `status` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_userrob` WHERE `uid` = 22 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2020-04-09T20:00:58+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0014s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2020-04-09T20:01:00+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001754s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0017s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2020-04-09T20:01:01+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0014s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2020-04-09T20:01:03+08:00 ] 127.0.0.1 /Withdraw/drawup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001463s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0021s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0026s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-04-09T20:01:23+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0017s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2020-04-09T20:01:24+08:00 ] 127.0.0.1 /Withdraw/drawup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002242s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0019s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-04-09T20:02:01+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0015s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0026s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2020-04-09T20:02:02+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2020-04-09T20:02:04+08:00 ] 127.0.0.1 /Withdraw/drawup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001388s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0021s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-04-09T20:02:11+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003259s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2020-04-09T20:02:14+08:00 ] 127.0.0.1 /Withdraw/drawup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001591s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0019s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0013s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `ysk_userrob` WHERE `uid` = 22 ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_system` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ysk_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-04-09T20:02:16+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002588s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2020-04-09T20:02:18+08:00 ] 127.0.0.1 /Withdraw/drawup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0017s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2020-04-09T20:03:15+08:00 ] 127.0.0.1 /Withdraw/drawup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002261s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0013s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0022s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2020-04-09T20:03:24+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001520s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0022s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2020-04-09T20:03:27+08:00 ] 127.0.0.1 /Withdraw/drawup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001714s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0014s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ysk_userrob` WHERE `uid` = 22 ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_system` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ysk_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-04-09T20:04:14+08:00 ] 127.0.0.1 /Withdraw/tixian2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0017s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0015s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2020-04-09T20:04:16+08:00 ] 127.0.0.1 /Withdraw/tixian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001661s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0012s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0024s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2020-04-09T20:04:19+08:00 ] 127.0.0.1 /Withdraw/drawup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001725s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0015s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0021s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0005s ]
+
