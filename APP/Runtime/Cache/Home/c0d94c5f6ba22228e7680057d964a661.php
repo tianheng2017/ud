@@ -1,0 +1,102 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="/Public/home/wap/css/mui.min.css" rel="stylesheet">
+
+	<style>
+		.body{
+			line-height: px;
+		}
+		.mui-table-view-cell:after{
+			left: 0px;
+			background-color: #c8c7cc;
+			margin: 0 40px;
+		}
+		.mui-table-view:before{
+			background-color: unset;
+		}
+		.mui-table-view:after{
+			background-color: unset;
+		}
+		.mui-input-group:before{
+			height:0px
+		}
+		.mui-input-group:after{
+			height: 0px;
+		}
+		.header{
+			background:#fff;
+			top:0;
+			box-shadow:0 0px 0px #ccc;
+			-webkit-box-shadow:0 0px 0px #ccc;
+		}
+		.h1{
+			font-family:'微软雅黑';
+			color: #000;
+		}
+		.ul{
+			background:#fff;
+			/*border-radius:10px;*/
+			box-shadow:2px 0 0 0 #ccc;
+			margin: 50px 0 0 0;
+		}
+		a{
+			color:#000;
+		}
+		.span{
+			color:#000;
+			margin-left:10px;
+			padding: 6px;
+		}
+		.span1{
+			font-size:1.4em;
+			color:#2AC845;
+			position: absolute;
+			right: 10px;
+		}
+		.span2{
+			position:absolute;
+			color:#000;
+			padding:6px;
+			right: 40%;
+		}
+	</style>
+</head>
+<body style="background:#f8f8f8;">
+	
+		<header class="mui-bar mui-bar-nav header">
+			<div style="width:10%;float:left;">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
+			</div>
+			<div style="width:80%;float:left;"><h1 class="mui-title h1">提币记录</h1></div>
+			<div style="width:10%;float:right;text-align:center;" id="goWithdraw">
+				<img src="../Public/home/wap/images/file1.png" style=" height:36px; margin: 10%;">
+			</div>	
+	
+		</header>	
+		<ul class="mui-table-view ul">
+				<?php if(empty($welist)): ?><li class="mui-table-view-cell mui-collapse-content" style="text-align:center;">
+					<span style="color:#000;font-size:14px;">您暂时没有提币成功的记录</span>
+				</li>
+				<?php else: ?>
+				<?php if(is_array($welist)): foreach($welist as $key=>$info): ?><li class="mui-table-view-cell">
+				 	<span class="span"><?php echo $info['way'];?>提币</span>
+				 	<span class="span1">-<?php echo $info['price'];?><font style=" font-size: 11px;"></font>
+					</span>
+				 	<span class="span2"><?php echo date("Y-m-d H:i",$info['addtime']);?></span>
+				 </li><?php endforeach; endif; endif; ?>
+			</ul>
+</body>
+<script type="text/javascript" src="/Public/home/common/js/jquery-1.9.1.min.js" ></script>
+<script type="text/javascript" src="/Public/home/common/layer/layer.js" ></script>
+
+<script type="text/javascript">
+	$("#goWithdraw").click(function(){
+		window.location.href="<?php echo U('Withdraw/tixian');?>"
+	});
+
+</script>
+</html>

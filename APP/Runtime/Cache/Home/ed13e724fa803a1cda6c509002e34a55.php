@@ -17,7 +17,7 @@
 		}
 		.acc{
 			font-weight: bold;
-			color: #000;
+			color: #fff;
 			font-size: 16px;
 			top:20px;
 		}
@@ -25,14 +25,19 @@
 			width:100%;
 			left: unset;
 			border-radius: unset;
-			background-color: #fff;
-			/*border: 1px solid #c8c7cc;*/
+			background-color: #8665F4;
+			height: 130px;
 			box-shadow:2px 0px 0 0px #ccc;
 			margin-top: 15px;
 		}
 		.jibie{
-			background: #5574FF;
+			background: #8665F4;
 			margin-left: 70%;
+			border: 1px solid #fff;
+			padding: 10px 20px;
+			border-radius: 30px;
+			font-size: 16px;
+			margin-top: 18px;
 		}
 		.ullist{
 			background: #fff;
@@ -62,6 +67,73 @@
 		.mui-bar-tab .mui-tab-item .mui-icon~.mui-tab-label{
 			font-size: 0.9rem;
 		}
+		.zhye{
+			color: #000;
+			font-weight: bold;
+			font-size: 18px;
+			width: 120px;
+			text-align: center;
+			margin-top: 35px;
+			display: inline-block;
+		}
+		.txcz{
+			display: inline-block;
+			position: absolute;
+			top: 27px;
+			right: 30px;
+		}
+		.my-btn{
+			border-radius: 15px;
+			width: 70px;
+		}
+		.mui-card-my{
+			height: 90px;
+			border-radius: 15px;
+			margin: -30px 18px 18px;
+			box-shadow: unset;
+		}
+		.mui-card-my2{
+			height: 130px;
+			border-radius: 15px;
+			box-shadow: unset;
+			margin: 40px 18px 18px!important;
+		}
+		.img-my{
+			width: 50px;
+			height: 50px;
+		}
+		.mui-card-my2 a{
+			width: 32%;
+			display: inline-block;
+			text-align: center;
+			margin-top: 20px;
+			color: #000;
+		}
+		.mui-card-my2 a span{
+			font-size: 18px;
+			display: block;
+			text-align: center;
+			margin-top: 5px;
+		}
+		.mui-card-my3{
+			height: 280px;
+			border-radius: 15px;
+			box-shadow: unset;
+			margin: 20px 18px 18px!important;
+		}
+		.mui-card-my3 a{
+			width: 24%;
+			display: inline-block;
+			text-align: center;
+			margin-top: 25px;
+			color: #000;
+		}
+		.mui-card-my3 a span{
+			font-size: 18px;
+			display: block;
+			text-align: center;
+			margin-top: 5px;
+		}
 	</style>
 </head>
 <body style="background:#F8F8F8;" class="mui-ios mui-ios-11 mui-ios-11-0">
@@ -76,22 +148,78 @@
 		<span class="acc" style="font-size: 20px;"><?php echo ($list["username"]); ?></span>
 		<span class="acc" style="top: 60px; margin-left: 5%;">邀请码</span>
 		<span class="acc" style="top: 60px; margin-left: 20%;"><?php echo ($list["u_yqm"]); ?></span>
-		<button type="button" class="jibie">金沙会员</button>
+		<div type="button" class="jibie">金沙会员</div>
 	</div>
-	<ul class="mui-table-view ullist">
-		<li class="mui-table-view-cell mui-collapse-content">
+	<div class="mui-card mui-card-my">
+		<div class="zhye">资产余额</div>
+		<div class="txcz">
+			<a href="<?php echo U('Recharge/erc20cz');?>" style="margin-right: 5px;">
+				<button type="button" class="mui-btn mui-btn-royal my-btn">提币</button>
+			</a>
+			<a href="<?php echo U('Withdraw/tixian');?>">
+				<button type="button" class="mui-btn mui-btn-royal my-btn">充币</button>
+			</a>
+		</div>
+	</div>
+	<div class="mui-card mui-card-my2">
+		<a href="<?php echo U('User/zichan');?>">
+			<img src="../Public/home/wap/img/1.png" class="img-my">
+			<span>我的钱包</span>
+		</a>
+		<a href="<?php echo U('User/bill');?>">
+			<img src="../Public/home/wap/img/2.png" class="img-my">
+			<span>资产明细</span>
+		</a>
+		<a href="<?php echo U('User/myteam');?>">
+			<img src="../Public/home/wap/img/3.png" class="img-my">
+			<span>我的团队</span>
+		</a>
+	</div>
+	<div class="mui-card mui-card-my3">
+		<div class="mui-card-header" style="font-weight: bold;font-size: 19px;">服务中心</div>
+		<a href="<?php echo U('User/ziliao');?>">
+			<img src="../Public/home/wap/img/5.png" class="img-my">
+			<span>个人资料</span>
+		</a>
+		<a href="<?php echo U('User/Sharecode');?>">
+			<img src="../Public/home/wap/img/4.png" class="img-my">
+			<span>邀请好友</span>
+		</a>
+		<a href="<?php echo U('User/erweima');?>">
+			<img src="../Public/home/wap/img/10.png" class="img-my">
+			<span>收款码</span>
+		</a>
+		<a href="<?php echo U('Recharge/chongzhijilu');?>">
+			<img src="../Public/home/wap/img/7.png" class="img-my">
+			<span>充币记录</span>
+		</a>
+		<a href="<?php echo U('Withdraw/index');?>">
+			<img src="../Public/home/wap/img/7.png" class="img-my">
+			<span>提币记录</span>
+		</a>
+		<a href="javascript:;">
+			<img src="../Public/home/wap/img/8.png" class="img-my">
+			<span>在线客服</span>
+		</a>
+		<a href="<?php echo U('User/shezhi');?>">
+			<img src="../Public/home/wap/img/9.png" class="img-my">
+			<span>设置</span>
+		</a>
+	</div>
+	<!-- <ul class="mui-table-view ullist"> -->
+<!-- 		<li class="mui-table-view-cell mui-collapse-content">
 			<img src="../Public/home/wap/images/zichan.png" class="imglist">
 			<a href="<?php echo U('User/zichan');?>" class="mui-navigate-right" style=" margin-left: 10%;font-size: 0.9em; bottom: 4px; ">
 				我的钱包
 			</a>
-		</li>
-		<li class="mui-table-view-cell mui-collapse-content">
+		</li> -->
+<!-- 		<li class="mui-table-view-cell mui-collapse-content">
 			<img src="../Public/home/wap/images/ziliao.png" class="imglist">
 			<a href="<?php echo U('User/ziliao');?>" class="mui-navigate-right" style=" margin-left: 10%;font-size: 0.9em; bottom: 4px; ">
 				个人资料
 			</a>
-		</li>
-		<li class="mui-table-view-cell mui-collapse-content">
+		</li> -->
+<!-- 		<li class="mui-table-view-cell mui-collapse-content">
 			<img src="../Public/home/wap/images/chongzhi.png" class="imglist">
 			<a href="<?php echo U('Recharge/chongzhijilu');?>" class="mui-navigate-right" style=" margin-left: 10%;font-size: 0.9em; bottom: 4px; ">
 				充币记录
@@ -102,43 +230,35 @@
 			<a href="<?php echo U('Withdraw/index');?>" class="mui-navigate-right" style=" margin-left: 10%; font-size: 0.9em;bottom: 4px; ">
 				提币记录
 			</a>
-		</li>
-		<li class="mui-table-view-cell mui-collapse-content">
+		</li> -->
+<!-- 		<li class="mui-table-view-cell mui-collapse-content">
 			<img src="../Public/home/wap/images/tixian.png" class="imglist">
 			<a href="<?php echo U('User/bill');?>" class="mui-navigate-right" style=" margin-left: 10%; font-size: 0.9em;bottom: 4px; ">
 				资产明细
 			</a>
-		</li>
-		<!--
-		<li class="mui-table-view-cell mui-collapse-content">
-			<img src="../Public/home/wap/images/tixian.png" class="imglist">
-			<a href="<?php echo U('User/yjbill');?>" class="mui-navigate-right" style=" margin-left: 10%; font-size: 0.9em;bottom: 4px; ">
-				支出明细
-			</a>
-		</li>
-		-->
-		<li class="mui-table-view-cell mui-collapse-content">
+		</li> -->
+<!-- 		<li class="mui-table-view-cell mui-collapse-content">
 			<img src="../Public/home/wap/images/erweima.png" class="imglist">
 			<a href="<?php echo U('User/erweima');?>" class="mui-navigate-right" style=" margin-left: 10%; font-size: 0.9em;bottom: 4px; ">
 				收款码管理
 			</a>
-		</li>
+		</li> -->
 
-		<li class="mui-table-view-cell mui-collapse-content">
+<!-- 		<li class="mui-table-view-cell mui-collapse-content">
 			<img src="../Public/home/wap/images/fenxiang.png" class="imglist">
 			<a href="<?php echo U('User/Sharecode');?>" class="mui-navigate-right" style=" margin-left: 10%; font-size: 0.9em;bottom: 4px; ">
 				邀请好友
 			</a>
-		</li>
+		</li> -->
 		
-		<li class="mui-table-view-cell mui-collapse-content">
+<!-- 		<li class="mui-table-view-cell mui-collapse-content">
 			<img src="../Public/home/wap/images/tixian.png" class="imglist">
 			<a href="<?php echo U('User/myteam');?>" class="mui-navigate-right" style=" margin-left: 10%; font-size: 0.9em;bottom: 4px; ">
 				我的团队
 			</a>
-		</li>
+		</li> -->
 		
-		<li class="mui-table-view-cell mui-collapse-content">
+<!-- 		<li class="mui-table-view-cell mui-collapse-content">
 			<img src="../Public/home/wap/images/guanyu.png" class="imglist">
 			<style>
 				#ib_iconDiv{display:none}
@@ -149,15 +269,15 @@
 			<a href="javascript:;" class="mui-navigate-right" style=" margin-left: 10%;font-size: 0.9em; bottom: 4px; " onClick="ib_wopen();">
 				在线客服
 			</a>
-		</li>
-		<li class="mui-table-view-cell mui-collapse-content">
+		</li> -->
+<!-- 		<li class="mui-table-view-cell mui-collapse-content">
 			<img src="../Public/home/wap/images/shezhi.png" class="imglist">
 			<a href="<?php echo U('User/shezhi');?>" class="mui-navigate-right" style=" margin-left: 10%;font-size: 0.9em; bottom: 4px; ">
 				设置
 			</a>
-		</li>
+		</li> -->
 
-	</ul>
+	<!-- </ul> -->
 
 </div>
 
