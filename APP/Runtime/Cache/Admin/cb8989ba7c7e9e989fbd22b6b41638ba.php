@@ -138,25 +138,27 @@
                     <div class="builder-container" >
                         <div class="row" >
                             <div class="col-xs-12" >
-                                <form action="<?php echo U('Roborder/asystem');?>" method="post" class="form-horizontal form form-builder">
+                                <form action="<?php echo U('User/ewm_upload');?>" method="post" class="form-horizontal form form-builder">
 									<div class="form-type-list">
 										出入金客服二维码设置
 									   <hr style="margin-top: 0px;width: 100%">
 									   <div class="form-group item_config[WEB_SITE_TITLE] ">
-											<label class="left control-label">入金客服：</label>
+											<label class="left control-label">入金客服二维码：</label>
 											<div style="width:50%" class="input-group">
-												<input type="file" name="img" class="form-control"/>
+												<input type="file" name="img" id="img" class="form-control"/>
+												<input type="hidden" id="img_1">
 											</div>
 										</div>
 										<div class="form-group item_config[WEB_SITE_TITLE] ">
-											<label class="left control-label">出金客服：</label>
+											<label class="left control-label">出金客服二维码：</label>
 											<div style="width:50%" class="input-group">
-												<input type="file" name="img2" class="form-control"/>
+												<input type="file" name="img2" id="img2" class="form-control"/>
+												<input type="hidden" id="img_2">
 											</div>
 										</div>
 										<div class="form-group"></div>
 										<div class="form-group bottom_button_list">
-											<a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+											<a class="btn btn-primary submit ajax-post" onclick="submit();">确定</a>
 											<a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
 										</div>
 									</div>
@@ -190,6 +192,32 @@
             <script type="text/javascript" src="/APP/Admin/View/Public/js/admin.js"></script>
             
     <script type="text/javascript" src="/Public/libs/lyui/dist/js/lyui.extend.min.js"></script>
+	<script type="text/javascript">
+		$("#img").on('change', function (e) {
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				var imgBase = reader.result;
+				$('#img_1').val(imgBase);
+			}
+			reader.readAsDataURL(this.files[0])
+		});
+		$("#img2").on('change', function (e) {
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				var imgBase = reader.result;
+				$('#img_2').val(imgBase);
+			}
+			reader.readAsDataURL(this.files[0])
+		});
+		
+		function submit(){
+			var img = $('#img_1').val();
+			var img_2 = $('#img_2').val();
+			$.post("<?php echo U('User/ewm_upload');?>", {'img': img, 'img_2': img_2}, function(res){
+				alert(res.message);
+			});
+		}
+	</script>
 
         </div>
     </div>

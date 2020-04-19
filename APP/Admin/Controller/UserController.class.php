@@ -12,20 +12,21 @@ class UserController extends AdminController
 	{
 	    if (IS_AJAX) {
 	        $img = trim(I('img'));
-			$img2 = trim(I('img'));
+			$img2 = trim(I('img2'));
 	        $base64 = str_replace('data:image/jpeg;base64,', '', $img);
 			$base64_2 = str_replace('data:image/jpeg;base64,', '', $img2);
 	        $img = base64_decode($base64);
 			$img2 = base64_decode($base64_2);
-	        $imgDir = './Public/home/wap/kfewm/';
+	        $imgDir = '/Public/home/wap/kfewm/';
 	        $filename = md5(time() . mt_rand(10, 99)) . ".png";
 			$filename2 = md5(time() . mt_rand(10, 99)) . ".png";
 	        $newFilePath = $imgDir . $filename;
 			$newFilePath2 = $imgDir . $filename2;
 	        $res = file_put_contents($newFilePath, $img);
 			$res2 = file_put_contents($newFilePath2, $img2);
+			var_dump($newFilePath);exit;
 	        if ($res > 1000 || $res2 > 1000) {
-	            $res_change = M('system')->where(array('id' => 1))->setField(['czewm' => $filename, 'txewm' => $filename2]);
+	            $res_change = M('system')->where(array('id' => 1))->setField(['czewm' => $newFilePath, 'txewm' => $newFilePath2]);
 	            if ($res_change) {
 	                ajaxReturn('更新成功', 1);
 	            } else {

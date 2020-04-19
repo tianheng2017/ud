@@ -3,9 +3,9 @@ return array(
 	//数据库配置
 	'DB_TYPE'   => 'mysql', // 数据库类型
     'DB_HOST'   => '127.0.0.1', // 服务器地址
-    'DB_NAME'   => 'ud_xiangxin_me', // 数据库名
-    'DB_USER'   => 'ud_xiangxin_me', // 用户名
-    'DB_PWD'    => 'S28G6Tki7FSsAaAw', // 密码
+    'DB_NAME'   => 'sql478886', // 数据库名
+    'DB_USER'   => 'sql478886', // 用户名
+    'DB_PWD'    => 'f0fcf84c', // 密码
     'DB_PORT'   => '3306', // 端口
     'DB_PREFIX' => 'ysk_', // 数据库表前缀
 

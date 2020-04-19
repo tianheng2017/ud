@@ -129,7 +129,7 @@
         <ul class="breadcrumb">
             <li><i class="fa fa-map-marker"></i></li>
 
-            <li class="text-muted"><?php echo $_menu_tab['name']['0'] .'/'.'充值管理';?></li>
+            <li class="text-muted"><?php echo $_menu_tab['name']['0'] .'/'.$_menu_tab['name']['1'];?></li>
 
         </ul>
 
@@ -151,7 +151,7 @@
                                                     <select name="querytype" class="form-control lyui-select select">
                                                         <option  value="userid">ID号</option>
                                                          <option {eq name=":input('get.querytype')" value="mobile" }selected="true"{/eq}  value="mobile">手机</option>
-                                                    </select>
+                                                    </select>                                            
                                                 </div>
 
                                                 <div style="float:left;width:30%;" class="input-group search-form">
@@ -163,27 +163,9 @@
 												<form class="form" method="get" action="">
 												<div style="float:left;width:10%;" class="input-group search-form" style="">
                                                     <input type="hidden" value="1" name="coinpx" />
-                                                    <input type="submit" value="金额排序" style="border:none;height:33px;width:80%;background:#2699ed;color:#ffffff;cursor:pointer;margin-left: 50px;"/></button>
+                                                    <input type="submit" value="余额排序" style="border:none;height:33px;width:80%;background:#2699ed;color:#ffffff;cursor:pointer;"/></button>
                                                 </div>
 												 </form>
-<!--												<form class="form" method="get" action="<?php echo U('User/save_czset')?>">-->
-<!--													<div style="float:left;" class="" >-->
-<!--														<label class="left control-label" style="float:left;line-height: 29px;margin-bottom:0px">所属银行: </label>-->
-<!--														<input  type="text" name="cz_yh" class="search-input form-control" value="<?php echo ($conf["cz_yh"]); ?>" placeholder="建设银行" style="width: 90px;">-->
-<!--													</div>-->
-<!--													<div style="float:left;" class="" >-->
-<!--														<label class="left control-label" style="float:left;line-height: 29px;margin-bottom:0px">充值姓名: </label>-->
-<!--														<input  type="text" name="cz_xm" class="search-input form-control" value="<?php echo ($conf["cz_xm"]); ?>" placeholder="张三" style="width: 80px;">-->
-<!--													</div>-->
-<!--													<div style="float:left;" class="" >-->
-<!--														<label class="left control-label" style="float:left;line-height: 29px;margin-bottom:0px">银行卡号: </label>-->
-<!--														<input  type="text" name="cz_kh" class="search-input form-control" value="<?php echo ($conf["cz_kh"]); ?>" placeholder="6217002290088888888" style="width: 200px;">-->
-<!--													</div>-->
-<!--													<div style="float:left;" class="input-group search-form">-->
-<!--														<input type="hidden" value="1" name="save_czset" />-->
-<!--														<input type="submit" value="保存" style="border:none;height:33px;width:70px;background:#2699ed;color:#ffffff;cursor:pointer;"/></button>-->
-<!--													</div>-->
-<!--												 </form>-->
 
 												
                                             </div>
@@ -191,12 +173,7 @@
                                  </div>
                             </div>
                         </div>
-                        <style type="text/css">
-                            tr,td{margin: 0 !important;padding: 5px 5px !important;}
-                            th,td{
-                                text-align: center;
-                            }
-                        </style>
+                        <style type="text/css">tr,td{margin: 0 !important;padding: 5px 5px !important;}</style>
 
                         <!-- 数据列表 -->
                         <div class="builder-container">
@@ -207,13 +184,23 @@
                                             <table class="table table-bordered table-striped table-hover">
                                               <thead>
                                                 <tr>
-                                                    <th style="font-size:12px;">ID</th>
-                                                    <th style="font-size:12px;">登录账号</th>
-                                                    <th style="font-size:12px;">充值金额</th>
-                                                    <th style="font-size:12px;">充值方式</th>
-                                                    <th style="font-size:12px;">充值凭证</th>
-                                                    <th style="font-size:12px;">充值日期</th>
-                                                    <th style="font-size:12px;">状态</th>
+                                                    <th style="font-size:12px;">UID</th>
+                                                    <th style="font-size:12px;">账号</th>
+                                                    <th style="font-size:12px;">昵称</th>
+                                                    <th style="font-size:12px;">注册</th>
+                                                    <th style="font-size:12px;">直推</th>
+                                                    <th style="font-size:12px;">上级</th>
+                                                    <th style="font-size:12px;">余额</th>
+													<th style="font-size:12px;">锁定金额</th>
+                                                    <th style="font-size:12px;">价格比例</th> 
+													
+													<th style="font-size:12px;">抢单状态</th>
+													
+													<th style="font-size:12px;">直推 / 人</th>
+													<th style="font-size:12px;">团队 / 人</th>
+													
+                                                    <th style="font-size:12px;">冻结</th>
+                                                    <th style="font-size:12px;">认证</th>
                                                     <th style="max-width:20%;font-size:12px;" >操作</th>
                                                 </tr>
                                             </thead>
@@ -225,24 +212,62 @@
                                                         </tr> 
 													<?php else: ?>
 													<?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
-															<td style="font-size:12px;"><?php echo $v['id'];?></td>
+															<td style="font-size:12px;"><?php echo $v['userid'];?></td>
 															<td style="font-size:12px;"><?php echo $v['account'];?></td>
-															<td style="font-size:12px;"><?php echo $v['price'];?></td>
-															<td style="font-size:12px;"><?php echo getclass($v['way']);?></td>
-                                                            <?php if ($v['status'] == 4){?>
-                                                            <td style="font-size:12px;">-</td>
-                                                            <?php }else{ ?>
-                                                            <td style="font-size:12px;"><a target="_blank" href="<?php echo $v['img'];?>">查看充值凭证</a></td>
-                                                            <?php } ?>
-															<td style="font-size:12px;"><?php echo date("Y-m-d H:i",$v['addtime']);?></td>
-															<td style="font-size:12px;"><?php echo getst($v['status']);?></td>
+															<td style="font-size:12px;"><?php echo $v['username'];?></td>
+															<td style="font-size:12px;"><?php echo date('Y-m-d',$v['reg_date']);?></td>
+															<td style="font-size:12px;"><?php echo M('user')->where(array('pid'=>$v['userid']))->count();?></td>
+															<td style="font-size:12px;"><?php echo getSjuser($v['pid']);?></td>
 															<td style="font-size:12px;">
-                                                                <?php if ($v['status'] == 1){?>
-																<a href="<?php echo U('User/reedit',array('id'=>$v['id'],'st'=>1));?>" style="font-size:12px;cursor:pointer;">到账 ||</a>
-																<a href="<?php echo U('User/reedit',array('id'=>$v['id'],'st'=>2));?>" style="font-size:12px;cursor:pointer;">驳回</a>
-                                                                <?php }else{ ?>
-                                                                -
-                                                                <?php } ?>
+																<?php echo $v['money'];?>
+																<a href="<?php echo U('User/moneyts',array('userid'=>$v['userid']));?>" style="font-size:11px;cursor:pointer;display:inline-block;float:right;"><=转账=></a>
+															</td>
+															<td style="font-size:12px;"><?php echo $v['smoney'];?></td>
+															<td style="font-size:12px;"><?php echo $v['cpriceproportion'];?> %</td>
+															
+															
+															<td style="font-size:12px;">
+															<?php if($v['qd_status']==1){?>
+																可抢单
+															<?php }elseif($v['qd_status']==0){?>
+																锁仓中
+															<?php }else{?>
+																锁仓中
+															<?php }?>
+															</td>
+															
+															<td style="font-size:12px;"><?php echo $v['zcount'];?></td>
+															<td style="font-size:12px;"><?php echo $v['tcount'];?></td>
+															
+															
+															<td style="font-size:12px;">
+															<?php if($v['status']==1){?>
+																<a href="<?php echo U('User/set_status',array('userid'=>$v['userid'],'st'=>1));?>" style="font-size:12px;color:green;cursor:pointer;">冻结</a>
+
+															<?php }elseif($v['status']==0){?>
+																<a href="<?php echo U('User/set_status',array('userid'=>$v['userid'],'st'=>2));?>" style="font-size:12px;color:red;cursor:pointer;">解冻</a>
+															<?php }else{?>
+																<span style="font-size:12px; color:yellow;">黑了</span>
+															<?php }?>
+															</td>
+															<?php if($v['rz_st']!=1){?>
+																<td style="font-size:12px; color:red;">否</td>	
+															<?php }else{?>
+																<td style="font-size:12px; color:green;">是</td>		
+															<?php }?>
+															
+															<td style="font-size:12px;">
+																<a href="<?php echo U('User/edit',array('userid'=>$v['userid']));?>" style="font-size:12px;cursor:pointer;">详情 ||</a>
+																
+																
+																<a href="<?php echo U('User/uteam',array('userid'=>$v['userid']));?>" style="font-size:12px;cursor:pointer;">团队详情 ||</a>
+																
+																<a href="<?php echo U('User/restrict',array('userid'=>$v['userid']));?>" style="font-size:12px;cursor:pointer;">限制 ||</a>
+                                                                <a href="<?php echo U('User/adminrecharge',array('userid'=>$v['userid']));?>" style="font-size:12px;cursor:pointer;">充币</a>
+																<!--
+																<a href="<?php echo U('User/del',array('userid'=>$v['userid']));?>" style="font-size:12px;cursor:pointer;">删除</a>
+																-->
+																
 															</td>
 	
 														</tr><?php endforeach; endif; endif; ?>

@@ -8,7 +8,7 @@ use Think\Controller;
 class IndexController extends CommonController
 {
 	/**
-	 * 将某个数平分成n份
+	 * 将某个数随机分成n份
 	 * @param {Object} $total
 	 * @param {Object} $div
 	 */
@@ -22,9 +22,13 @@ class IndexController extends CommonController
 		return $a;
 	}
 	
-	public function ewm(){
+	public function kfewm(){
 		$type = intval(I(get.type));
-		$this->assign('title', '充值管理');
+		if ($type == 1){
+			$this->assign('title', '充值管理');
+		}else if($type == 2){
+			$this->assign('title', '提现管理');
+		}
 		$this->display();
 	}
 	

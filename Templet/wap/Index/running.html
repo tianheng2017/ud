@@ -70,6 +70,9 @@
 			padding: 11px 10px;
 			font-size: 14px;
 		}
+		.mui-bar-tab .mui-tab-item .mui-icon~.mui-tab-label {
+		    font-size: 0.9rem;
+		}
 	</style>
 </head>
 <body style="background:#f8f8f8;">
