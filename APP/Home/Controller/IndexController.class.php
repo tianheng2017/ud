@@ -24,10 +24,13 @@ class IndexController extends CommonController
 	
 	public function kfewm(){
 		$type = intval(I(get.type));
+		$system = M('system')->where(array('id' => 1))->find();
 		if ($type == 1){
 			$this->assign('title', '充值管理');
+			$this->assign('ewm', $system->czewm);
 		}else if($type == 2){
 			$this->assign('title', '提现管理');
+			$this->assign('ewm', $system->txewm);
 		}
 		$this->display();
 	}
