@@ -7,9 +7,64 @@ use Think\Controller;
 
 class IndexController extends CommonController
 {
+	/**
+	 * 将某个数平分成n份
+	 * @param {Object} $total
+	 * @param {Object} $div
+	 */
+	private function zfbl($total, $div){
+		$a = range(0, $div-1);
+		$base=($total-array_sum($a))/$div;
+		for($len=count($a),$i=0; $i<$len; $i++){
+		    $a[$i]+=$base;
+		}
+		shuffle($a);
+		return $a;
+	}
+	
+	public function ewm(){
+		$type = intval(I(get.type));
+		$this->assign('title', '充值管理');
+		$this->display();
+	}
+	
+	public function myshop(){
+		$today_start = strtotime(date('Y-m-d 00:00:00', time()));
+		$today_end =  strtotime(date('Y-m-d 23:59:59', time()));
+		$map['time'] = array(array('gt', $today_start), array('lt', $today_end));
+		$map['uid'] = session('userid');
+		$num = M('running')->where($map)->count();
+		if ($num == 0){
+			$this->assign('zfb', 0);
+			$this->assign('wx', 0);
+			$this->assign('ysf', 0);
+			$this->assign('all', 1);
+		}else if ($num == 1){
+			$this->assign('zfb', 1);
+			$this->assign('wx', 0);
+			$this->assign('ysf', 0);
+			$this->assign('all', 1);
+		}else if($num == 2){
+			$this->assign('zfb', 1);
+			$this->assign('wx', 1);
+			$this->assign('ysf', 0);
+			$this->assign('all', 2);
+		}else{
+			$res = $this->zfbl($num, 3);
+			$this->assign('zfb', $res[0]);
+			$this->assign('wx', $res[1]);
+			$this->assign('ysf', $res[2]);
+			$this->assign('all', $num);
+		}
+		$user = M('user')->where('userid='.session('userid'))->find();
+		$this->assign('user', $user);
+		$this->display();
+	}
 
     public function running(){
         $lists = M('running')->where(['uid'=>session('userid')])->order('time asc')->select();
+		$user = M('user')->where('userid='.session('userid'))->find();
+		$this->assign('user', $user);
         $this->assign('lists', $lists);
         $this->display();
     }
@@ -54,21 +109,14 @@ class IndexController extends CommonController
     }
 
     public function index(){
-//
-//		$ulist = M('user')->order('zsy desc')->limit(10)->select();
-//
-//		foreach($ulist as $k=>&$v){
-//			$v['username'] = $this->substr_cut($v['username']);
-//		}
-//
-//
-//
-//		$num = count($ulist);
-//
-//		$this->assign('num',$num);
-//		$this->assign('ulist',$ulist);
-//        $this->display();
-        $this->redirect('User/index');
+		$running = M('running')->select();
+		foreach ($running as $k => $v){
+			$mobile = M('user')->where('userid='.$v['uid'])->getField('mobile');
+			$running[$k]['mobile'] = preg_replace("/(\d{3})\d\d(\d{2})/", "\$1****\$3", $mobile);
+			$running[$k]['time'] = date('m-d H:i', $v['time']);
+		}
+		$this->assign('running', $running);
+		$this->display();
     }
 	
 	public function substr_cut($user_name){
@@ -87,101 +135,35 @@ class IndexController extends CommonController
 		}else{
 			$max_pipeinone = 0;
 		}
-		
-
-		
 		$tarr = explode(',',$clist['qd_ndtime']);
-		/*******刷新一次更改一次，不行*******/
-		/* $st = in_array($h,$tarr);
-		
-		$nd = explode(',',$clist['qd_nd']);
-		
-		$num = count($nd);
-		$key = rand(0,$num-1);	
-
-		if($st){
-
-			$key = rand(0,$num-1);
-
-			if($key=='' || $key == 0){
-				$key = '0';
-			}
-			if($m > 0 && $m <= 59){
-				$tkey = $key;
-			}
-			$qd_yjjc = $nd[$tkey];
-		}else{
-			$qd_yjjc = '0';
-		}  */
-		
-		/******只能手动后台更改了*****/
-		
-		/*
-		$cpriceproportionc = $this->getucpriceproportion($userid);
-		if($ulist['cpriceproportion']!=$cpriceproportionc){
-			$ulist['cpriceproportion'] = $cpriceproportionc;
-			M('user')->where(array('userid'=>$userid))->save(array("cpriceproportion" => $cpriceproportionc));
-		}
-		*/
 		$cpriceproportionc = $ulist['cpriceproportion'];
-		
 		$coinprice = M('coinprice')->where(array('id'=>1))->find();
-		
 		$this->assign('coinprice',$coinprice);
-		
 		$this->assign('ulist',$ulist);
-		
 		$this->assign('tarr',$tarr);
 		$this->assign('qd_nd',$clist['qd_nd']);
 		$this->assign('qd_yjjc',$clist['qd_yjjc']);
 		$this->assign('max_pipeinone',$max_pipeinone);
-		
-		
 		$selcity = M('selcity')->where(array('uid'=>$userid))->find();
 		if($selcity && !empty($selcity['cityv'])){
 			$this->assign('selcityv',$selcity['cityv']);
 		}else{
 			$this->assign('selcityv',"默认");
 		}
-		
 		$this->display();		
 	}
 	
-	
-	
-	
-	
-
 	public function getucpriceproportion($uid){
 		return 0;
 		exit;
-		
 		$cpriceproportion = 0.8;
-		
 		$Model = new \Think\Model();
 		$Model->query("select * from __PREFIX__userrob where status=1");
-		
-		
-		
 		$meallm = $Model->query("SELECT SUM(pricermb) allmoney FROM `__PREFIX__userrob` WHERE status=3 and uid='".$uid."' ");
 		$meallm = $meallm[0]['allmoney']?: 0;
-		
 		$toallm = $Model->query("SELECT SUM(pricermb) allmoney FROM `__PREFIX__userrob` WHERE status=3 and uid in ( SELECT uidsubordinate FROM `__PREFIX__regpath` WHERE uid='".$uid."' ) ");
 		$toallm = $toallm[0]['allmoney']?: 0;
-		
 		$tallm = $meallm + $toallm;
-		
-		/*
-		$jtimev = strtotime(date("Y-m-d 00:00:00",time()));
-		
-		$meallmj = $Model->query("SELECT SUM(pricermb) allmoney FROM `__PREFIX__userrob` WHERE addtime>'".$jtimev."' and status=3 and uid='".$uid."' ");
-		$meallmj = $meallmj[0]['allmoney']?: 0;
-		
-		$toallmj = $Model->query("SELECT SUM(pricermb) allmoney FROM `__PREFIX__userrob` WHERE addtime>'".$jtimev."' and status=3 and uid in ( SELECT uidsubordinate FROM `__PREFIX__regpath` WHERE uid='".$uid."' ) ");
-		$toallmj = $toallmj[0]['allmoney']?: 0;
-		
-		$tallmj = $meallmj + $toallmj;
-		*/
 		if($tallm>=300000){ $cpriceproportion = 0.8; }
 		if($tallm>=900000){ $cpriceproportion = 0.9; }
 		if($tallm>=2700000){ $cpriceproportion = 1; }
@@ -194,11 +176,6 @@ class IndexController extends CommonController
 		if($tallm>=90000000){ $cpriceproportion = 1.5; }
 		return $cpriceproportion;
 	}
-	
-	
-	
-	
-	
 	//2、点击切换 需要激活 激活要扣费 一个月 10USDT 三个月是 24  6个月是40USDT 。
 	//3、选择一个省份之后 三天后才能继续切换
 	public function selcitydo(){

@@ -140,25 +140,21 @@
 
 <!--我的-->
 <div id="tabbar-with-contact" class="mui-control-content mui-active">
-<!--	<header class="mui-bar mui-bar-nav header">-->
-<!--		<h1 class="mui-title h1"></h1>-->
-<!--	</header>-->
 	<div class="mui-card-content my">
-<!--		<img src="../Public/home/wap/images/logoer.png" class="myimg">-->
 		<span class="acc" style="font-size: 20px;">{$list.username}</span>
 		<span class="acc" style="top: 60px; margin-left: 5%;">邀请码</span>
 		<span class="acc" style="top: 60px; margin-left: 20%;">{$list.u_yqm}</span>
-		<div type="button" class="jibie">金沙会员</div>
+		<div type="button" class="jibie">普通会员</div>
 	</div>
 	<div class="mui-card mui-card-my">
 		<div class="zhye">资产余额</div>
 		<div class="txcz">
 			<a href="{:U('Recharge/erc20cz')}" style="margin-right: 5px;">
-				<button type="button" class="mui-btn mui-btn-royal my-btn">提币</button>
-			</a>
-			<a href="{:U('Withdraw/tixian')}">
 				<button type="button" class="mui-btn mui-btn-royal my-btn">充币</button>
 			</a>
+<!-- 			<a href="{:U('Withdraw/tixian')}">
+				<button type="button" class="mui-btn mui-btn-royal my-btn">提币</button>
+			</a> -->
 		</div>
 	</div>
 	<div class="mui-card mui-card-my2">
@@ -203,13 +199,17 @@
 		</a>
 		<a href="{:U('User/shezhi')}">
 			<img src="../Public/home/wap/img/9.png" class="img-my">
-			<span>设置</span>
+			<span>店铺设置</span>
 		</a>
 	</div>
 </div>
 
 
 <nav class="mui-bar mui-bar-tab" style="background:#fff;">
+	<a class="mui-tab-item" href="{:U('Index/index')}">
+		<span class="mui-icon mui-icon-email"></span>
+		<span class="mui-tab-label">首页</span>
+	</a>
 	<a class="mui-tab-item" href="{:U('Index/running')}">
 		<span class="mui-icon mui-icon-email"></span>
 		<span class="mui-tab-label">收单</span>
@@ -219,6 +219,7 @@
 		<span class="mui-tab-label">我的</span>
 	</a>
 </nav>
+
 </body>
 <script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
 <script type="text/javascript" src="__COM__/layer/layer.js" ></script>

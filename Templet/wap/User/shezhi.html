@@ -46,8 +46,6 @@
 		.ul{
 			background:#fff;
 			line-height:2em;
-			/*border-radius:10px;*/
-			/*box-shadow:2px 0px 20px 0px #ccc;*/
 			margin: 55px 0 0 0;
 		}
 		.mui-table-view-cell:after{
@@ -80,21 +78,51 @@
 <body style="background:#f8f8f8;">
 	<header class="mui-bar mui-bar-nav header">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
-			<h1 class="mui-title h1">设置</h1>
+			<h1 class="mui-title h1">店铺设置</h1>
 	</header>
-
-	<a href="javascript:void(0)"> <button type="button" class="button"style="margin-top:30px;background: #FF5F74;color:#fff;" onclick="loginout()" >退出登录</button></a>
-	<ul class="mui-table-view ul">
-		<li class="mui-table-view-cell mui-collapse-content"><p class="li">联系客服</p> </li>
-	    <li class="mui-table-view-cell mui-collapse-content" ><p class="li">当前版本</p><p class="right">v 3.1.0</p> </li>
-	</ul>
-	
+	<div style="margin-top:44px;">
+		<form class="mui-input-group" id="form">
+		    <div class="mui-input-row">
+		        <label>店铺名称</label>
+				<input type="text" id="shop_name" name="shop_name" class="mui-input-clear" placeholder="请输入店铺名称" autocomplete="off" value="{$user['shop_name']}">
+		    </div>
+		    <div class="mui-input-row">
+		        <label>店铺地址</label>
+		        <input type="text" id="shop_address" name="shop_address" class="mui-input-clear" placeholder="请输入地址" autocomplete="off" value="{$user['shop_address']}">
+		    </div>
+			<div class="mui-input-row">
+			    <label>店铺手机号</label>
+			    <input type="text" id="shop_mobile" name="shop_mobile" class="mui-input-clear" placeholder="请输入手机号" autocomplete="off" value="{$user['shop_mobile']}">
+			</div>
+		    <div class="mui-button-row">
+		        <button type="button" class="mui-btn mui-btn-primary" id="submit" style="width: 50%;">提交</button>
+		    </div>
+		</form>
+	</div>
 </body>
  <script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
  <script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+ <script type="text/javascript" src="__COM__/js/mui.min.js" ></script>
  <script type="text/javascript">
-	function loginout(){
-		window.location.href="{:U('User/Loginout')}";
-	}
+	$('#submit').on('click',function(){
+		var check = true;
+		mui("#form input").each(function() {
+			if(!this.value || this.value.trim() == "") {
+				var label = this.previousElementSibling;
+				mui.alert(label.innerText + "不允许为空");
+				check = false;
+				return false;
+			}
+		});
+		if(check){
+			mui.post("{:U('User/shezhi')}", {
+				shop_name: $('#shop_name').val(),
+				shop_address: $('#shop_address').val(),
+				shop_mobile: $('#shop_mobile').val(),
+			},function(res){
+				mui.alert(res.message);
+			},'json');
+		}
+	});
  </script>
 </html>

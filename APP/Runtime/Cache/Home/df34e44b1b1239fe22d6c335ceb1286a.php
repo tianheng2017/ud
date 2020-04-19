@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <!-- saved from url=(0038)http://103.200.29.54/index.html#tabbar -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <title></title>
-    <link href="__WCSS__/mui.min.css" rel="stylesheet">
-	<link href="__WCSS__/app.css" rel="stylesheet">
-	<link href="__WCSS__/indexindex.css" rel="stylesheet">
+    <link href="/Public/home/wap/css/mui.min.css" rel="stylesheet">
+	<link href="/Public/home/wap/css/app.css" rel="stylesheet">
+	<link href="/Public/home/wap/css/indexindex.css" rel="stylesheet">
 	<style>
 		.bgcolor10{background: #8A6DE9;}
 		.bgcolor9{background:grey;}
@@ -81,15 +81,15 @@
 		</header>
 		<img src="../Public/home/wap/images/phbbg.png" class="img">
 		<div class="mui-card mui-card-my2">
-			<a href="{:U('Index/ewm')}/type/1">
+			<a href="<?php echo U('Index/ewm');?>/type/1">
 				<img src="../Public/home/wap/img/11.png" class="img-my">
 				<span>充值管理</span>
 			</a>
-			<a href="{:U('Index/ewm')}/type/2">
+			<a href="<?php echo U('Index/ewm');?>/type/2">
 				<img src="../Public/home/wap/img/12.png" class="img-my">
 				<span>提现管理</span>
 			</a>
-			<a href="{:U('User/Sharecode')}">
+			<a href="<?php echo U('User/Sharecode');?>">
 				<img src="../Public/home/wap/img/13.png" class="img-my">
 				<span>邀请好友</span>
 			</a>
@@ -100,13 +100,11 @@
 				<div class="mui-scroll">
 					<marquee style="margin-left: 30px;" behavior="scroll" direction="up" height="190px" width="100%" hspace="100" vspace="45" loop="-1" scrollamount="5" scrolldelay="0" onMouseOut="this.start()" onMouseOver="this.stop()">
 						<ul class="mui-table-view">
-							<foreach name="running" item="v">
-							    <li class="mui-table-view-cell mui-collapse-content">
-							    	<div style="width: 32%;display: inline-block;">{$v['mobile']}</div>
-							    	<div style="width: 32%;display: inline-block;color: #8069F7;">获得返佣{$v['money']}元</div>
-							    	<div style="width: 32%;display: inline-block;">{$v['time']}</div>
-							    </li>
-							</foreach>
+							<?php if(is_array($running)): foreach($running as $key=>$v): ?><li class="mui-table-view-cell mui-collapse-content">
+							    	<div style="width: 32%;display: inline-block;"><?php echo ($v['mobile']); ?></div>
+							    	<div style="width: 32%;display: inline-block;color: #8069F7;">获得返佣<?php echo ($v['money']); ?>元</div>
+							    	<div style="width: 32%;display: inline-block;"><?php echo ($v['time']); ?></div>
+							    </li><?php endforeach; endif; ?>
 						</ul>
 					</marquee>
 				</div>
@@ -114,20 +112,20 @@
 		</div>
 	</div>
 	<nav class="mui-bar mui-bar-tab" style="background:#fff;">
-		<a class="mui-tab-item mui-active" href="{:U('Index/index')}">
+		<a class="mui-tab-item mui-active" href="<?php echo U('Index/index');?>">
 			<span class="mui-icon mui-icon-email"></span>
 			<span class="mui-tab-label">首页</span>
 		</a>
-		<a class="mui-tab-item" href="{:U('Index/running')}">
+		<a class="mui-tab-item" href="<?php echo U('Index/running');?>">
 			<span class="mui-icon mui-icon-email"></span>
 			<span class="mui-tab-label">收单</span>
 		</a>
-		<a class="mui-tab-item" href="{:U('User/index')}">
+		<a class="mui-tab-item" href="<?php echo U('User/index');?>">
 			<span class="mui-icon mui-icon-contact"></span>
 			<span class="mui-tab-label">我的</span>
 		</a>
 	</nav>
-	<script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
-	<script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+	<script type="text/javascript" src="/Public/home/common/js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="/Public/home/common/layer/layer.js" ></script>
 </body>
 </html>

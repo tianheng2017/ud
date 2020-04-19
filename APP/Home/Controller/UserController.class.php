@@ -434,35 +434,7 @@ class UserController extends CommonController
 			}
 		}
 	}
-	
-	
-	
-/*     public function Imgup()
-    {
-        $uid = session('userid');
-        $picname = $_FILES['uploadfile']['name'];
-        $picsize = $_FILES['uploadfile']['size'];
-        if ($uid != "") {
-            if ($picsize > 2014000) { //限制上传大小
-                ajaxReturn('图片大小不能超过2M', 0);
-            }
-            $type = strstr($picname, '.'); //限制上传格式
-            if ($type != ".gif" && $type != ".jpg" && $type != ".png" && $type != ".jpeg") {
-                ajaxReturn('图片格式不对', 0);
-            }
-            $rand = rand(100, 999);
-            $pics = uniqid() . $type; //命名图片名称
-            //上传路径
-            $pic_path = "./Public/home/wap/heads/" . $pics;
-            move_uploaded_file($_FILES['uploadfile']['tmp_name'], $pic_path);
-        }
-        $size = round($picsize / 1024, 2); //转换成kb
-        $pic_path = trim($pic_path, '.');
-        if ($size) {
-            $res = M('user')->where(array('userid' => $uid))->setField('img_head', $pics);
-            ajaxReturn($pic_path, 1);
-        }
-    } */
+
     public function imgUps()
     {
         if (IS_AJAX) {
@@ -689,9 +661,7 @@ class UserController extends CommonController
         session_destroy();
         $this->redirect('Login/login');
     }
-	
-	
-	
+
 	public function myteam(){
 		$uid = session('userid');
 		$userobj = M('user');
@@ -704,57 +674,54 @@ class UserController extends CommonController
 		    $lown = M('regpath')->where(array('uidsubordinate'=>$v['userid']))->getField('lown');
 			$list[$k]['lown'] = $arr[$lown];
 		}
-		
     	$this->assign ( 'list', $list ); // 賦值數據集
 		$this->assign('count',$count);
     	//$this->assign ( 'page', $p->show() ); // 賦值分頁輸出
-		
 		$zcount = M('regpath')->where(array('uid'=>$uid,'lown'=>1))->count();
 		$this->assign ( 'zcount', $zcount ); 
-		
-		
 		$tcount =M('regpath')->where(array('uid'=>$uid))->count();
 		$this->assign ( 'tcount', $tcount+1 ); 
-		
-		
-		
-		
-		
-		
-		
 		$Model = new \Think\Model();
-		
-		
-		
 		$meallm = $Model->query("SELECT SUM(pricermb) allmoney FROM `__PREFIX__userrob` WHERE status=3 and uid='".$uid."' ");
 		$meallm = $meallm[0]['allmoney']?: 0;
-		
 		$toallm = $Model->query("SELECT SUM(pricermb) allmoney FROM `__PREFIX__userrob` WHERE status=3 and uid in ( SELECT uidsubordinate FROM `__PREFIX__regpath` WHERE uid='".$uid."' ) ");
 		$toallm = $toallm[0]['allmoney']?: 0;
-		
 		$tallm = $meallm + $toallm;
-		
-		
 		$jtimev = strtotime(date("Y-m-d 00:00:00",time()));
-		
 		$meallmj = $Model->query("SELECT SUM(pricermb) allmoney FROM `__PREFIX__userrob` WHERE addtime>'".$jtimev."' and status=3 and uid='".$uid."' ");
 		$meallmj = $meallmj[0]['allmoney']?: 0;
-		
 		$toallmj = $Model->query("SELECT SUM(pricermb) allmoney FROM `__PREFIX__userrob` WHERE addtime>'".$jtimev."' and status=3 and uid in ( SELECT uidsubordinate FROM `__PREFIX__regpath` WHERE uid='".$uid."' ) ");
 		$toallmj = $toallmj[0]['allmoney']?: 0;
-		
 		$tallmj = $meallmj + $toallmj;
-		
-		
 		$this->assign ( 'meallm', $meallm ); 
 		$this->assign ( 'meallmj', $meallmj ); 
 		$this->assign ( 'tallm', $tallm ); 
 		$this->assign ( 'tallmj', $tallmj ); 
-		
-		
-		
-		
-		
+		$this->display();
+	}
+	
+	public function shezhi(){
+		$uid = session('userid');
+		if (IS_POST){
+			try {
+				$shop_name = trim(I('post.shop_name'));
+				$shop_address = trim(I('post.shop_address'));
+				$shop_mobile = trim(I('post.shop_mobile'));
+				if(!preg_match("/^1[345789]{1}\d{9}$/", $shop_mobile)){
+					ajaxReturn("手机号格式不正确");exit;
+				}
+				$userobj = M('user');
+				$userobj->shop_name = $shop_name;
+				$userobj->shop_address = $shop_address;
+				$userobj->shop_mobile = $shop_mobile;
+				$userobj->where('userid='.$uid)->save();
+				ajaxReturn("设置成功");exit;
+			} catch(\Excepthion $e) {
+				ajaxReturn($e->getMessage());exit;
+			}
+		}
+		$user = M('user')->where('userid='.$uid)->find();
+		$this->assign('user', $user);
 		$this->display();
 	}
 }

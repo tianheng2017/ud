@@ -154,9 +154,9 @@
 			</div>
 			</a>
 			<a href="<?php echo U('Withdraw/tixian');?>">
-			<div class="mui-button-row">
+<!-- 			<div class="mui-button-row">
 				<button type="button" class="mui-btn mui-btn-danger button1">提币</button>
-			</div>
+			</div> -->
 			</a>
 			</div>
 		<ul class="mui-table-view ul1">

@@ -140,25 +140,21 @@
 
 <!--我的-->
 <div id="tabbar-with-contact" class="mui-control-content mui-active">
-<!--	<header class="mui-bar mui-bar-nav header">-->
-<!--		<h1 class="mui-title h1"></h1>-->
-<!--	</header>-->
 	<div class="mui-card-content my">
-<!--		<img src="../Public/home/wap/images/logoer.png" class="myimg">-->
 		<span class="acc" style="font-size: 20px;"><?php echo ($list["username"]); ?></span>
 		<span class="acc" style="top: 60px; margin-left: 5%;">邀请码</span>
 		<span class="acc" style="top: 60px; margin-left: 20%;"><?php echo ($list["u_yqm"]); ?></span>
-		<div type="button" class="jibie">金沙会员</div>
+		<div type="button" class="jibie">普通会员</div>
 	</div>
 	<div class="mui-card mui-card-my">
 		<div class="zhye">资产余额</div>
 		<div class="txcz">
 			<a href="<?php echo U('Recharge/erc20cz');?>" style="margin-right: 5px;">
-				<button type="button" class="mui-btn mui-btn-royal my-btn">提币</button>
-			</a>
-			<a href="<?php echo U('Withdraw/tixian');?>">
 				<button type="button" class="mui-btn mui-btn-royal my-btn">充币</button>
 			</a>
+<!-- 			<a href="<?php echo U('Withdraw/tixian');?>">
+				<button type="button" class="mui-btn mui-btn-royal my-btn">提币</button>
+			</a> -->
 		</div>
 	</div>
 	<div class="mui-card mui-card-my2">
@@ -203,103 +199,27 @@
 		</a>
 		<a href="<?php echo U('User/shezhi');?>">
 			<img src="../Public/home/wap/img/9.png" class="img-my">
-			<span>设置</span>
+			<span>店铺设置</span>
 		</a>
 	</div>
-	<!-- <ul class="mui-table-view ullist"> -->
-<!-- 		<li class="mui-table-view-cell mui-collapse-content">
-			<img src="../Public/home/wap/images/zichan.png" class="imglist">
-			<a href="<?php echo U('User/zichan');?>" class="mui-navigate-right" style=" margin-left: 10%;font-size: 0.9em; bottom: 4px; ">
-				我的钱包
-			</a>
-		</li> -->
-<!-- 		<li class="mui-table-view-cell mui-collapse-content">
-			<img src="../Public/home/wap/images/ziliao.png" class="imglist">
-			<a href="<?php echo U('User/ziliao');?>" class="mui-navigate-right" style=" margin-left: 10%;font-size: 0.9em; bottom: 4px; ">
-				个人资料
-			</a>
-		</li> -->
-<!-- 		<li class="mui-table-view-cell mui-collapse-content">
-			<img src="../Public/home/wap/images/chongzhi.png" class="imglist">
-			<a href="<?php echo U('Recharge/chongzhijilu');?>" class="mui-navigate-right" style=" margin-left: 10%;font-size: 0.9em; bottom: 4px; ">
-				充币记录
-			</a>
-		</li>
-		<li class="mui-table-view-cell mui-collapse-content">
-			<img src="../Public/home/wap/images/tixian.png" class="imglist">
-			<a href="<?php echo U('Withdraw/index');?>" class="mui-navigate-right" style=" margin-left: 10%; font-size: 0.9em;bottom: 4px; ">
-				提币记录
-			</a>
-		</li> -->
-<!-- 		<li class="mui-table-view-cell mui-collapse-content">
-			<img src="../Public/home/wap/images/tixian.png" class="imglist">
-			<a href="<?php echo U('User/bill');?>" class="mui-navigate-right" style=" margin-left: 10%; font-size: 0.9em;bottom: 4px; ">
-				资产明细
-			</a>
-		</li> -->
-<!-- 		<li class="mui-table-view-cell mui-collapse-content">
-			<img src="../Public/home/wap/images/erweima.png" class="imglist">
-			<a href="<?php echo U('User/erweima');?>" class="mui-navigate-right" style=" margin-left: 10%; font-size: 0.9em;bottom: 4px; ">
-				收款码管理
-			</a>
-		</li> -->
-
-<!-- 		<li class="mui-table-view-cell mui-collapse-content">
-			<img src="../Public/home/wap/images/fenxiang.png" class="imglist">
-			<a href="<?php echo U('User/Sharecode');?>" class="mui-navigate-right" style=" margin-left: 10%; font-size: 0.9em;bottom: 4px; ">
-				邀请好友
-			</a>
-		</li> -->
-		
-<!-- 		<li class="mui-table-view-cell mui-collapse-content">
-			<img src="../Public/home/wap/images/tixian.png" class="imglist">
-			<a href="<?php echo U('User/myteam');?>" class="mui-navigate-right" style=" margin-left: 10%; font-size: 0.9em;bottom: 4px; ">
-				我的团队
-			</a>
-		</li> -->
-		
-<!-- 		<li class="mui-table-view-cell mui-collapse-content">
-			<img src="../Public/home/wap/images/guanyu.png" class="imglist">
-			<style>
-				#ib_iconDiv{display:none}
-			</style>
-			<div style="display:none">
-				<script type="text/javascript" src="http://c.ibangkf.com/i/c-kakapaofen.js"></script>
-			</div>
-			<a href="javascript:;" class="mui-navigate-right" style=" margin-left: 10%;font-size: 0.9em; bottom: 4px; " onClick="ib_wopen();">
-				在线客服
-			</a>
-		</li> -->
-<!-- 		<li class="mui-table-view-cell mui-collapse-content">
-			<img src="../Public/home/wap/images/shezhi.png" class="imglist">
-			<a href="<?php echo U('User/shezhi');?>" class="mui-navigate-right" style=" margin-left: 10%;font-size: 0.9em; bottom: 4px; ">
-				设置
-			</a>
-		</li> -->
-
-	<!-- </ul> -->
-
 </div>
 
 
 <nav class="mui-bar mui-bar-tab" style="background:#fff;">
-<!--	<a class="mui-tab-item" href="<?php echo U('Index/qdgame');?>">-->
-<!--		<span class="mui-icon mui-icon-email"></span>-->
-<!--		<span class="mui-tab-label">抢单</span>-->
-<!--	</a>-->
+	<a class="mui-tab-item" href="<?php echo U('Index/index');?>">
+		<span class="mui-icon mui-icon-email"></span>
+		<span class="mui-tab-label">首页</span>
+	</a>
 	<a class="mui-tab-item" href="<?php echo U('Index/running');?>">
 		<span class="mui-icon mui-icon-email"></span>
 		<span class="mui-tab-label">收单</span>
 	</a>
-<!--	<a class="mui-tab-item" href="<?php echo U('Index/shoudan');?>">-->
-<!--		<span class="mui-icon mui-icon-gear"></span>-->
-<!--		<span class="mui-tab-label">收单</span>-->
-<!--	</a>-->
 	<a class="mui-tab-item mui-active" href="<?php echo U('User/index');?>">
 		<span class="mui-icon mui-icon-contact"></span>
 		<span class="mui-tab-label">我的</span>
 	</a>
 </nav>
+
 </body>
 <script type="text/javascript" src="/Public/home/common/js/jquery-1.9.1.min.js" ></script>
 <script type="text/javascript" src="/Public/home/common/layer/layer.js" ></script>

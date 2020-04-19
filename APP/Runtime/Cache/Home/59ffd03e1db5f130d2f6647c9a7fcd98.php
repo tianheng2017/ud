@@ -78,25 +78,34 @@
 <body style="background:#f8f8f8;">
 	<header class="mui-bar mui-bar-nav header">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
-			<h1 class="mui-title h1">店铺设置</h1>
+			<h1 class="mui-title h1">店铺信息</h1>
 	</header>
 	<div style="margin-top:44px;">
 		<form class="mui-input-group" id="form">
 		    <div class="mui-input-row">
 		        <label>店铺名称</label>
-				<input type="text" id="shop_name" name="shop_name" class="mui-input-clear" placeholder="请输入店铺名称" autocomplete="off" value="<?php echo ($user['shop_name']); ?>">
+				<input type="text" id="shop_name" name="shop_name" autocomplete="off" value="<?php echo ($user['shop_name']); ?>" readonly="">
 		    </div>
 		    <div class="mui-input-row">
 		        <label>店铺地址</label>
-		        <input type="text" id="shop_address" name="shop_address" class="mui-input-clear" placeholder="请输入地址" autocomplete="off" value="<?php echo ($user['shop_address']); ?>">
+		        <input type="text" id="shop_address" name="shop_address" autocomplete="off" value="<?php echo ($user['shop_address']); ?>" readonly="">
 		    </div>
 			<div class="mui-input-row">
 			    <label>店铺手机号</label>
-			    <input type="text" id="shop_mobile" name="shop_mobile" class="mui-input-clear" placeholder="请输入手机号" autocomplete="off" value="<?php echo ($user['shop_mobile']); ?>">
+			    <input type="text" id="shop_mobile" name="shop_mobile" autocomplete="off" value="<?php echo ($user['shop_mobile']); ?>" readonly="">
 			</div>
-		    <div class="mui-button-row">
-		        <button type="button" class="mui-btn mui-btn-primary" id="submit" style="width: 50%;">提交</button>
-		    </div>
+			<div class="mui-input-row">
+			    <label>支付宝支付</label>
+			    <input type="text" id="shop_mobile" name="shop_mobile" autocomplete="off" value="<?php echo ($zfb); ?>单(占比<?php echo round($zfb/$all,2)*100;?>%)" readonly="">
+			</div>
+			<div class="mui-input-row">
+			    <label>微信支付</label>
+			    <input type="text" id="shop_mobile" name="shop_mobile" autocomplete="off" value="<?php echo ($wx); ?>单(占比<?php echo round($wx/$all,2)*100;?>%)" readonly="">
+			</div>
+			<div class="mui-input-row">
+			    <label>云闪付</label>
+			    <input type="text" id="shop_mobile" name="shop_mobile" autocomplete="off" value="<?php echo ($ysf); ?>单(占比<?php echo round($ysf/$all,2)*100;?>%)" readonly="">
+			</div>
 		</form>
 	</div>
 </body>

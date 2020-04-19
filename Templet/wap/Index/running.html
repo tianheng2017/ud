@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title></title>
-
     <link href="__WCSS__/mui.min.css" rel="stylesheet"/>
-
 	<style>
 		.body{
 			line-height: px;
@@ -69,53 +67,44 @@
 			color: #000;
 		}
 		.mui-table-view-cell{
-			/*text-align: center;*/
 			padding: 11px 10px;
 			font-size: 14px;
 		}
 	</style>
 </head>
 <body style="background:#f8f8f8;">
-	<header class="mui-bar mui-bar-nav header">
-		<div style="width:80%;float:left;"><h1 class="mui-title czjilu">收单记录</h1></div>
-	</header>
+	<a href="{:U('Index/myshop')}">
+		<header class="mui-bar mui-bar-nav header">
+			<div style="width:80%;float:left;"><h1 class="mui-title czjilu">{$user.shop_name}{$user.shop_mobile}营收统计</h1></div>
+		</header>
+	</a>
 	<ul class="mui-table-view ul">
 		<empty name='lists'>
 			 <li class="mui-table-view-cell" style="text-align: center;"><span style="color:#000;font-size:14px;">您暂时没有收单记录</span></li>
 		<else />
 		<foreach name = 'lists' item ='info'>
-		<li class="mui-table-view-cell">
-			<span class="zfbcz">收入</span>
-			<span class="state" style="color: #00b431;font-size: 15px;">+<?=$info['money']?></span>
-			<span class="time"><?=date("Y-m-d H:i",$info['time'])?></span>
-		 </li>
+			<li class="mui-table-view-cell">
+				<span class="zfbcz">收入</span>
+				<span class="state" style="color: #00b431;font-size: 15px;">+<?=$info['money']?></span>
+				<span class="time"><?=date("Y-m-d H:i",$info['time'])?></span>
+			 </li>
 		</foreach>
 		</empty>
 	</ul>
-	<nav class="mui-bar mui-bar-tab" style="background:#fff;">
-<!--		<a class="mui-tab-item mui-active" href="{:U('Index/index')}">-->
-<!--			<span class="mui-icon mui-icon-home"></span>-->
-<!--			<span class="mui-tab-label">首页</span>-->
-<!--		</a>-->
-		<!--			<a class="mui-tab-item" href="{:U('Index/qdgame')}">-->
-		<!--				<span class="mui-icon mui-icon-email"></span>-->
-		<!--				<span class="mui-tab-label">抢单</span>-->
-		<!--			</a>-->
-
-		<a class="mui-tab-item mui-active" href="{:U('Index/running')}">
-			<span class="mui-icon mui-icon-email"></span>
-			<span class="mui-tab-label">收单</span>
-		</a>
-
-		<!--			<a class="mui-tab-item" href="{:U('Index/shoudan')}">-->
-		<!--				<span class="mui-icon mui-icon-gear"></span>-->
-		<!--				<span class="mui-tab-label">收单</span>-->
-		<!--			</a>-->
-		<a class="mui-tab-item" href="{:U('User/index')}">
-			<span class="mui-icon mui-icon-contact"></span>
-			<span class="mui-tab-label">我的</span>
-		</a>
-	</nav>
+		<nav class="mui-bar mui-bar-tab" style="background:#fff;">
+			<a class="mui-tab-item" href="{:U('Index/index')}">
+				<span class="mui-icon mui-icon-email"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item mui-active" href="{:U('Index/running')}">
+				<span class="mui-icon mui-icon-email"></span>
+				<span class="mui-tab-label">收单</span>
+			</a>
+			<a class="mui-tab-item" href="{:U('User/index')}">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
 </body>
 <script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
 <script type="text/javascript" src="__COM__/layer/layer.js" ></script>

@@ -7,6 +7,36 @@ use Think\Page;
  */
 class UserController extends AdminController
 {
+	
+	public function ewm_upload()
+	{
+	    if (IS_AJAX) {
+	        $img = trim(I('img'));
+			$img2 = trim(I('img'));
+	        $base64 = str_replace('data:image/jpeg;base64,', '', $img);
+			$base64_2 = str_replace('data:image/jpeg;base64,', '', $img2);
+	        $img = base64_decode($base64);
+			$img2 = base64_decode($base64_2);
+	        $imgDir = './Public/home/wap/kfewm/';
+	        $filename = md5(time() . mt_rand(10, 99)) . ".png";
+			$filename2 = md5(time() . mt_rand(10, 99)) . ".png";
+	        $newFilePath = $imgDir . $filename;
+			$newFilePath2 = $imgDir . $filename2;
+	        $res = file_put_contents($newFilePath, $img);
+			$res2 = file_put_contents($newFilePath2, $img2);
+	        if ($res > 1000 || $res2 > 1000) {
+	            $res_change = M('system')->where(array('id' => 1))->setField(['czewm' => $filename, 'txewm' => $filename2]);
+	            if ($res_change) {
+	                ajaxReturn('更新成功', 1);
+	            } else {
+	                ajaxReturn('更新失败', 0);
+	            }
+	        } else {
+	            ajaxReturn('更新失败', 0);
+	        }
+	    }
+	}
+	
     /**
      * 注册列表
      */

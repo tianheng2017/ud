@@ -1,11 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title></title>
 
-    <link href="/Public/home/wap/css/mui.min.css" rel="stylesheet"/>
+    <link href="__WCSS__/mui.min.css" rel="stylesheet"/>
 
 	<style>
 		.body{
@@ -78,31 +78,40 @@
 <body style="background:#f8f8f8;">
 	<header class="mui-bar mui-bar-nav header">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1)"></a>
-			<h1 class="mui-title h1">店铺设置</h1>
+			<h1 class="mui-title h1">店铺信息</h1>
 	</header>
 	<div style="margin-top:44px;">
 		<form class="mui-input-group" id="form">
 		    <div class="mui-input-row">
 		        <label>店铺名称</label>
-				<input type="text" id="shop_name" name="shop_name" class="mui-input-clear" placeholder="请输入店铺名称" autocomplete="off" value="<?php echo ($user['shop_name']); ?>">
+				<input type="text" id="shop_name" name="shop_name" autocomplete="off" value="{$user['shop_name']}" readonly="">
 		    </div>
 		    <div class="mui-input-row">
 		        <label>店铺地址</label>
-		        <input type="text" id="shop_address" name="shop_address" class="mui-input-clear" placeholder="请输入地址" autocomplete="off" value="<?php echo ($user['shop_address']); ?>">
+		        <input type="text" id="shop_address" name="shop_address" autocomplete="off" value="{$user['shop_address']}" readonly="">
 		    </div>
 			<div class="mui-input-row">
 			    <label>店铺手机号</label>
-			    <input type="text" id="shop_mobile" name="shop_mobile" class="mui-input-clear" placeholder="请输入手机号" autocomplete="off" value="<?php echo ($user['shop_mobile']); ?>">
+			    <input type="text" id="shop_mobile" name="shop_mobile" autocomplete="off" value="{$user['shop_mobile']}" readonly="">
 			</div>
-		    <div class="mui-button-row">
-		        <button type="button" class="mui-btn mui-btn-primary" id="submit" style="width: 50%;">提交</button>
-		    </div>
+			<div class="mui-input-row">
+			    <label>支付宝支付</label>
+			    <input type="text" id="shop_mobile" name="shop_mobile" autocomplete="off" value="{$zfb}单(占比{:round($zfb/$all,2)*100}%)" readonly="">
+			</div>
+			<div class="mui-input-row">
+			    <label>微信支付</label>
+			    <input type="text" id="shop_mobile" name="shop_mobile" autocomplete="off" value="{$wx}单(占比{:round($wx/$all,2)*100}%)" readonly="">
+			</div>
+			<div class="mui-input-row">
+			    <label>云闪付</label>
+			    <input type="text" id="shop_mobile" name="shop_mobile" autocomplete="off" value="{$ysf}单(占比{:round($ysf/$all,2)*100}%)" readonly="">
+			</div>
 		</form>
 	</div>
 </body>
- <script type="text/javascript" src="/Public/home/common/js/jquery-1.9.1.min.js" ></script>
- <script type="text/javascript" src="/Public/home/common/layer/layer.js" ></script>
- <script type="text/javascript" src="/Public/home/common/js/mui.min.js" ></script>
+ <script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
+ <script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+ <script type="text/javascript" src="__COM__/js/mui.min.js" ></script>
  <script type="text/javascript">
 	$('#submit').on('click',function(){
 		var check = true;
@@ -115,7 +124,7 @@
 			}
 		});
 		if(check){
-			mui.post("<?php echo U('User/shezhi');?>", {
+			mui.post("{:U('User/shezhi')}", {
 				shop_name: $('#shop_name').val(),
 				shop_address: $('#shop_address').val(),
 				shop_mobile: $('#shop_mobile').val(),
